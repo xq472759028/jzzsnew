@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>装修报价</title>
+    <link rel="stylesheet" href="css/jzindex.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <!--头部开始-->
+    <script src="js/header.js"></script>
+    <!--头部结束-->
+    <div class="home" style="width: 100%">
+        <img src="image/quote/q1_03.jpg" alt="">
+        <div class="qzoffer-bottom">
+            <div class="qzoffer-budget">
+                <h3>装修计算器 <span>今天已有<em>1582</em>位业主成功获取装修报价</span></h3>
+                <div class="qzoffer-form">
+                    <div class="qzoffer-form-list">
+                        <p>您的称呼:</p>
+                        <div class="qzoffer-select">
+                            <input type="text" placeholder="输入您的称呼">
+                        </div>
+                    </div>
+                    <div class="qzoffer-form-list">
+                        <p>房屋面积:</p>
+                        <div class="qzoffer-select">
+                            <input type="text" placeholder="输入您的房屋面积">
+                            <span>㎡</span>
+                        </div>
+                    </div>
+                    <div class="qzoffer-form-list">
+                        <p>房屋户型:</p>
+                        <div class="qzoffer-select">
+                            <select name="" id="select-city">
+                                <option value="">小户型</option>
+                                <option value="">大户型</option>
+                                <option value="">中户型</option>
+                                <option value="">无户型</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="qzoffer-form-list">
+                        <p>联系放式:</p>
+                        <div class="qzoffer-select">
+                            <input type="text" placeholder="报价结果将发送到您的手机">
+                        </div>
+                    </div>
+                </div>
+                <p class="qzoffer-state">声明：为了您的利益,您的隐私将被严格保密，请放心填写！</p>
+            </div>
+            <div class="qzoffer-cost">
+                <p class="qzoffer-cost-budget">您的装修预算 <span>111111</span><em>元</em></p>
+                <p class="qzoffer-cost-material">
+                    <span>装修材料费:<i class="qzoffer-cost-num1">111111</i><em>元</em></span>
+                    <span>人工费:<i class="qzoffer-cost-num2">111111</i><em>元</em></span>
+                    <span>设计费:<i class="qzoffer-cost-num3">111111</i><em>元</em></span>
+                    <span>质检费:<i class="qzoffer-cost-num4">111111</i><em>元</em></span>
+                </p>
+                <p class="qzoffer-cost-num" style="margin-top:20px"><span>21</span>年家装经验</p>
+                <p class="qzoffer-cost-num"><span>50</span>万家庭数据库参考</p>
+            </div>
+            <!--计算定位-->
+            <a href="javascript:;" class="qzoffer-star">
+                <p class="qzoffer-circle-shadow"></p>
+                <p class="qzoffer-circle"><span>开始</span> <span>计算</span></p>
+                <p class="qzoffer-hand">
+                    <img src="image/quote/q2.png" alt="">
+                </p>
+            </a>
+        </div>
+    </div>
+    <div class="home" style="width: 100%"><img src="image/quote/qu_03.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/quote/qu_05.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/quote/qu_06.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/quote/qu_07.jpg" alt=""></div>
+    <!--尾部开始-->
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+        // 数字跳动
+        function Num() {
+            document.querySelector(".qzoffer-cost-budget>span").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+            document.querySelector(".qzoffer-cost-num1").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+            document.querySelector(".qzoffer-cost-num2").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+            document.querySelector(".qzoffer-cost-num3").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+            document.querySelector(".qzoffer-cost-num4").innerHTML = Math.floor(Math.random() * (200000 - 10000) + 25);
+        }
+
+        var abc = setInterval(Num, 200);
+
+        $('.qzoffer-circle').on('click', function () {
+            window.clearInterval(abc);
+        })
+    })
+</script>

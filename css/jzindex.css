@@ -1,0 +1,1210 @@
+@import "bases.css";
+img{object-fit: cover}
+/* 公共部分 */
+.swiper-slide-active {height: auto}
+.swiper-container {width: 100%;height: 100%;}
+.swiper-slide {text-align: center;font-size: 18px;/*position: relative;*/overflow: hidden;height: 10px;/* Center slide text vertically */display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;display: flex;-webkit-box-pack: center;-ms-flex-pack: center;-webkit-justify-content: center;justify-content: center;-webkit-box-align: center;-ms-flex-align: center;-webkit-align-items: center;align-items: center;}
+.swiper-slide > a > img {display: block;width: 100%;height: 100%;}
+.swiper-pagination-bullet {width: 12px !important;height: 12px !important;}
+.swiper-button-prev {left: 10%;}
+.swiper-button-prev i{-webkit-transform: rotateY(270deg);-moz-transform: rotateY(180deg);-ms-transform: rotateY(180deg);transform: rotateY(180deg);}
+.swiper-button-prev,.swiper-button-next{overflow: hidden;top: 0;bottom: 0;margin: auto;background: rgba(0,0,0,0.6);}
+.swiper-button-prev i,.swiper-button-next i{display: block;font-weight: lighter;font-size: 50px;color: #fff;margin-top: 8px;}
+
+
+.home{width: 1200px;margin: 0 auto}
+.home img{display: block;width: 100%;overflow: hidden;position: relative}
+                                                    /* 首页样式 */
+
+/* banner轮播图 */
+.phome-banner {width: 100%;max-width: 1920px;height: auto;margin: 0 auto;height: 560px;position: relative;}
+.phome-banner .swiper-container{width: 100%;height: 100%;}
+.phome-banner .swiper-wrapper{width: 100%;height: 100%!important;}
+.phome-banner .swiper-slide {width: 100%;height: 100%!important;}
+.phome-banner .swiper-slide > a {width: 100%;height: 100%!important;}
+
+.phome-banner .swiper-button-next{width: 50px;height: 50px;background: url('../image/home/banner-left.jpg');right: 10% !important;}
+.phome-banner .swiper-button-prev{width: 50px;height: 50px;background: url('../image/home/banner-right.jpg');left: 10% !important;}
+.phome-banner .swiper-pagination-bullet{width: 16px;height: 16px;margin-right: 15px;background: #fff}
+.phome-banner .swiper-pagination-bullet-active{background: #0a6c3a}
+
+
+/* 本例子css */
+.phome-banner .slideBox{ width:100%; height:100%; overflow:hidden; position:relative;}
+.phome-banner .slideBox .hd{ height:16px; overflow:hidden; position:absolute; right:0px;left:0px;margin: auto;bottom:27px; z-index:1; }
+.phome-banner .slideBox .hd ul{ overflow:hidden; zoom:1;width: fit-content;width: -webkit-fit-content;width: -moz-fit-content;margin: auto;}
+.phome-banner .slideBox .hd ul li{ float:left; margin-right:15px;  width:16px; height:16px; background:#fff; cursor:pointer;border-radius: 50% }
+.phome-banner .slideBox .hd ul li.on{ background:#0a6c3a;}
+.phome-banner .slideBox .bd{ position:relative; height:100%; z-index:0;   }
+.phome-banner .tempWrap{width:100%!important; height:100%;}
+.phome-banner .tempWrap ul{width:100%; height:100%;}
+.phome-banner .slideBox .bd li{ zoom:1; vertical-align:middle;width:100%; height:100%; }
+.phome-banner .slideBox .bd img{ width:100%; height:100%; display:block;  }
+
+
+.phome-banner .arrow-left {background: url('../image/home/banner-right.jpg') no-repeat ;position: absolute;left: 10%;top: 50%;margin-top: -15px;width: 50px;height: 50px;z-index: 20;}
+.phome-banner .arrow-right {background: url('../image/home/banner-left.jpg') no-repeat;position: absolute;right: 10%;top: 50%;margin-top: -15px;width: 50px;height: 50px;z-index: 20}
+.phome-banner .swiper-container {height: 100%;width:100%;}
+.phome-banner .content-slide {padding: 20px;color: #fff;}
+.phome-banner .pagination {position: absolute;left: 0;text-align: center;bottom: 5px;width: 100%;z-index: 20;}
+.phome-banner .swiper-pagination-switch {display: inline-block;width: 16px;height: 16px;border-radius: 10px;background: #fff;box-shadow: 0px 1px 2px #555 inset;margin: 0 3px;cursor: pointer;}
+.phome-banner .swiper-active-switch {background: #0a6c3a;}
+.phome-banner .swiper-container img{display: block;width: 100%;height: 100%}
+
+
+
+/* 免费获取家装报价 */
+.phome-free{width: 100%;height: 136px}
+.phome-free-center{width: 1200px;height: 100%;margin: 0 auto;overflow: hidden;}
+.phome-free-top{width: 100%;margin-top: 40px;overflow: hidden;}
+.phome-free-gain{float: left;margin-right: 5px}
+.phome-free-gain>img{display: block;width: 25px;height: 25px;float: left;margin-right: 5px}
+.phome-free-gain>p{float: left;font-size: 24px;color: #333;line-height: 28px}
+.phome-free-top>p{float: left;font-size: 14px;color: #333;line-height: 38px}
+.phome-free-top>p>span{color: #d83e3e}
+.phome-free-bottom{width: 100%;margin-top: 10px}
+.phome-free-form{width: 100%;height: 46px}
+.phome-free-form>p{width: 230px;height: 46px;border:1px solid #c4c4c4;border-radius: 5px;float: left;margin-right: 19px;box-sizing: border-box}
+.phome-free-form>p>input{display: block;width: 220px;height: 100%;padding-left: 8px;font-size: 14px;background: #f6f6f6;}
+.phome-free-form>button{width: 204px;height: 46px;border-radius: 5px;background: #084f2b;font-size: 16px;color: #fff;text-align: center;line-height: 46px;float: left;}
+
+/* 21年品质如一 */
+.phome-make{width: 100%;height:auto;overflow: hidden;}
+.phome-make-center{width: 1200px;margin: 0 auto}
+.phome-make-title{width: 100%;margin:80px 0px 20px 0px}
+.phome-make-title>div{width:100%;position: relative;}
+.phome-make-title>div>em{position: absolute;width: 480px;height: 1px;top:38px;background: #cfcfcf}
+.phome-make-title>div>em:first-child{left: 0}
+.phome-make-title>div>em:last-child{right: 0}
+.phome-make-title>div>h3{display: block;font-size: 48px;color:#222222;text-align: center;width: 100%}
+.phome-make-title>span{display: block;text-align: center;font-size: 24px;color: #333333;padding-top:20px}
+.phome-make-img{width: 100%;height:720px;}
+.phome-make-left{float: left;width: 712px;height: 100%;float: left;}
+.phome-left-top{width: 100%;height: 338px;margin-bottom: 22px}
+.phome-left-bottom{width: 100%;height: 360px;}
+.phome-left-bottom>li{float: left;width: 346px;height: 100%}
+.phome-left-bottom>li:last-child{float:right}
+.phoome-make-right{float: right;width: 468px;height: 100%;}
+.phome-right-top{width: 100%;height: 300px;margin-bottom: 20px}
+.phome-right-bottom{width: 100%;height: 190px;}
+.phome-right-bottom>li{float: left;width: 224px;height:100%;margin-right: 20px;margin-bottom: 20px}
+.phome-right-bottom>li:nth-child(2n){margin-right: 0px}
+.phome-right-bottom>li:nth-child(3),.phome-right-bottom>li:nth-child(4){margin-bottom: 0px}
+.phome-make-img img{display: block;width: 100%;height: 100%;}
+
+
+
+/* 装修案例开始 */
+.phome-case-banner{width: 100%;max-width:1920px;height:560px;margin: 0 auto;}
+.phome-case-item{width: 100%;height:100%;}
+.phome-case-slider{width:100%;min-width:1200px;height:560px;position:relative;overflow:hidden;background:#fff;text-align:center;}
+.phome-case-slider .bd{width:1200px;position:absolute;left:50%;margin-left:-600px}
+.phome-case-slider .bd li{width:1200px;overflow:hidden;}
+.phome-case-slider .bd li img{display:block;width:1200px;height:560px;}
+.phome-case-slider .tempWrap{overflow:visible !important}
+.phome-case-slider .tempWrap ul{margin-left:-1200px !important;}
+.phome-case-slider .hd{position:absolute;width:35px;right:15%;z-index:1;top:15%;text-align:center;}
+.phome-case-slider .hd li{display:inline-block;zoom:1;width:29px;height:29px;border-radius: 50%;background:rgba(0,0,0,0.8);cursor:pointer;filter:alpha(opacity=60);opacity:0.6;font-size: 16px;color: #fff;line-height: 29px;margin: 0 auto;margin-top: 9px;}
+.phome-case-slider .hd li.on{background:#dc0000;filter:alpha(opacity=100);opacity:1;color: #fff;width:35px;height:35px;line-height: 35px}
+.phome-case-slider .pnBtn{position:absolute;z-index:1;top:0;width:100%;height:660px;cursor:pointer;background: rgba(0,0,0,0.7)}
+.phome-case-slider .prev{left:-50%;margin-left:-600px;}
+.phome-case-slider .next{left:50%;margin-left:600px;}
+.phome-case-slider .prev .arrow{right:30px;background:url(../image/home/case-left.png) 100% no-repeat;height: 60px;width: 60px;position: absolute;top:50%}
+.phome-case-slider .next .arrow{left:0;background:url(../image/home/case-right.png) 100% no-repeat;height: 60px;width: 60px;position: absolute;top:50%}
+.phome-case-list{width: 100%;height:100%;margin: 0 auto;position: relative}
+.phome-case-img{display: block;width: 100%;}
+.phome-case-img>img{display: block;width: 100%}
+.phome-case-center{width: 1200px;position: absolute;left: 0;bottom:65px;right: 0;margin: auto;}
+.phome-case-content{width: 515px;margin-right: 50px;padding: 0px 25px 25px 40px;float: right;background: rgba(0,0,0,0.37);}
+.phome-case-content>p{font-size: 30px;color: #fff;line-height: 100%;text-align: left;padding-bottom: 11px}
+.phome-case-content p span{margin-right:12px;}
+.phome-case-content i{font-style: normal;font-size: 16px;color: #fff;line-height: 28px;text-align: left;display: block;}
+.phome-case-people{height: 100px;width: 100%;float: left;}
+.phome-case-photo{width: 130px;height: 130px;border-radius: 50%;overflow: hidden;margin-right: 15px;margin-top: -50px;float: left;}
+.phome-case-photo>img{display: block;width: 130px!important;height: 130px!important;}
+.phome-case-info{float: left;height: 100%}
+.phome-case-info>p{font-size: 24px;color: #fff;line-height: 28px;padding-top: 10px}
+.phome-case-info>span{display:block;font-size: 14px;color: #fff}
+.phome-case-offer{width: 100%;height: 40px}
+.phome-case-offer>a{font-size: 16px;display:block;float: left;margin-right: 17px;text-align: center;line-height: 40px;width: 160px;height: 40px;margin-top: 20px}
+.phome-case-offer>a:first-child{background: #0a6c3a;color: #fff}
+.phome-case-offer>a:last-child{background: #fff;color: #333}
+
+
+
+/* 装修服务历程 */
+.phome-process{width: 100%;overflow: hidden;}
+.phome-process-center{width: 1200px;margin: 0 auto;margin-top: 20px}
+.phome-process-list{margin: 0 11px;height: 100px}
+.phome-process-list>li{position: relative;float: left;margin-right: 86px}
+.phome-process-list>li:last-child{margin-right: 0}
+.phome-process-img{width: 66px;height: 66px;margin: 0 auto}
+.phome-process-img>img{display: block;width: 100%;height: 100%}
+.phome-process-list>li>span{font-size: 18px;text-align: center;color: #333}
+.phome-process-list>li>p{position: absolute;width: 13px;height: 15px;left: 104px;top:28%}
+.phome-process-list>li>p>img{display: block;width: 100%;height: 100%}
+
+
+
+/* 22道工艺保障 */
+.phome-two{width: 100%;height: auto;overflow: hidden;}
+.phome-two-center{width: 1200px;height:500px;margin: 0 auto;margin-top:20px}
+.phome-two-list{float: left;width: 100px;height:100%}
+.phome-two-list li{float: left;width: 100px;height: 99px;border-bottom: 1px solid #fff;background: #313131;cursor: pointer;position: relative}
+.phome-two-list li img{display: block;margin:0 auto;margin-top: 20px}
+.phome-two-list li span{display: block;width: 100%;margin-top: 10px;text-align: center;color: #fff;font-size: 16px}
+.phome-two-icon{position: absolute;top: 0;bottom: 0;right:-29px;width: 29px;height: 36px;margin: auto;}
+.phome-two-li{background: #0a6c3a!important}
+.phome-two-icon-img{background: url('../image/home/sanjiao.png');z-index: 11}
+.phome-two-img{float: left;width: 1080px;height: 100%;position: relative}
+.phome-two-img li{width: 100%;height: 100%;position: absolute;left: 0;right: 0;}
+.phome-tright{width: 530px;height: 100%;float: left;}
+.phome-two-img li .phome-tright:nth-child(2){float:right;}
+.phome-tright-img{width: 100%;height: 325px}
+.phome-tright-img>img{display:block;width: 100%;height: 325px}
+.phome-tright-word{width: 100%;height: 175px;background: #f2f2f2;overflow: hidden;}
+.phome-tright-word>p{font-size: 24px;color: #333333;text-align: center;margin-top: 20px}
+.phome-tright-word>span{display:block;font-size: 18px;color: #333333;text-align: center;line-height: 26px}
+.phome-tright-word>span:nth-child(3){margin-top: 25px}
+.active{z-index: 10;}
+.phome-two-more{width: 240px;height: 40px;margin: 0 auto;text-align: center;line-height: 40px;font-size: 16px;color: #fff;margin-top: 40px;background: #0a6c3a;cursor: pointer}
+
+
+
+/* 品质套餐开始 */
+.phome-meal{width: 100%;height: auto;overflow: hidden;}
+.phome-meal-list{width: 1200px;height: auto;margin: 0 auto}
+.phome-meal-list>li{width: 386px;height: 338px;float: left;margin-right: 21px;margin-top: 20px;border:1px solid #e5e5e5;box-sizing: border-box}
+.phome-meal-list>li:nth-child(3n){margin-right: 0;}
+.phome-meal-img{position: relative;width: 100%;height: 248px}
+.phome-meal-img>img{display: block;width: 100%;height: 100%}
+.phome-meal-img>img:nth-child(2){position: absolute;width: 49px;height: 61px;left: 22px;top:0}
+.phome-meal-content{width: 100%;height: 89px}
+.phome-meal-left{width: 50%;margin-left: 22px;height: 100%;float: left;}
+.phome-meal-left>p{width:100%;font-size: 20px;color: #333;text-align: left;margin-top: 24px}
+.phome-meal-left>span{width:100%;font-size: 14px;color: #333;text-align: left;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;display: block;line-height: 30px}
+.phome-meal-right{float:right;margin-right: 10px;height: 100%;display: none}
+.phome-meal-now{width: 32px;height: 32px;font-size: 14px;padding:10px;text-align: center;line-height: 18px;margin-top:20px;float: left;margin-right: 10px;background: #084f2b;color: #fff;cursor: pointer;}
+.phome-meal-detail{display: block;background: #fff;color: #084f2b;font-size: 14px;border:1px solid #084f2b;padding: 10px;width: 31px;height: 31px;margin-right: 0;float: left;margin-top:20px;line-height: 16px}
+.phome-meal-list>li:hover{box-shadow: 0px 0px 4px 4px #e5e5e5}
+
+
+
+/* 在施工第开始 */
+.phome-being{width: 100%;height: auto;overflow: hidden;}
+.phome-being-center{width: 1200px;margin:0 auto;overflow: hidden;}
+
+
+
+
+/* 线下体验馆开始 */
+.home-hall{width: 100%;height: auto;overflow: hidden;}
+.home-hall-center{width: 1200px;height: 530px;margin: 0 auto}
+.home-hall-list{width: fit-content;width: -webkit-fit-content;width: -moz-fit-content;margin: auto;height: 100px;}
+.home-hall-list>li{height:16px;margin-top:42px;font-size: 16px;color: #333333;padding-right: 22px;border-right: 1px solid #333;line-height: 16px;cursor: pointer;float: left;margin-right:22px}
+.home-hall-list>li:last-child{border-right: none}
+.home-hall-content{width: 100%;height: 430px;position: relative}
+.home-hall-content>li{position: absolute;left: 0;top: 0}
+.home-con-left{float: left;width: 341px;height: 428px;background: #f6f6f6;border: 1px solid #e5e5e5}
+.home-con-word{width: 100%;box-sizing: border-box;height: 284px;overflow: hidden;}
+.home-con-word span{color: #333;width: 100%;display: block;text-align: center;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.home-con-word span:first-child{font-size: 24px;margin-top: 80px}
+.home-con-word span:nth-child(2){font-size: 16px;margin-top: 13px}
+.home-con-word span:nth-child(3){font-size: 20px;margin-top: 46px}
+.home-con-word span:nth-child(4){font-size: 18px;margin-top: 20px}
+.home-con-map{width: 290px;height: 50px;margin: 0 auto;background: #084f2b;border-radius: 4px;text-align: center;color: #fff;font-size: 18px;line-height: 50px;cursor: pointer;}
+.home-con-visite{width: 290px;height: 50px;margin: 0 auto;margin-top:20px;background: #333333;border-radius: 4px;text-align: center;color: #fff;font-size: 18px;line-height: 50px;cursor: pointer;}
+.home-con-right{width: 845px;height: 100%;float:right;}
+.home-con-img{width: 480px;height: 432px;margin-right: 10px;float: left;}
+.home-con-image{float: right;width: 355px;height: 100%}
+.home-con-image li{width: 100%;height: 210px;margin-bottom: 12px}
+.home-con-image li:last-child{margin-bottom: 0}
+.home-con-img img,.home-con-image img{display: block;width: 100%;height: 100%}
+
+/* 装修攻略开始 */
+.home-strate{width: 100%;height: auto;margin-top: 80px}
+.home-strate-center{width: 1200px;height: 665px;margin: 0 auto}
+.home-strate-title{width: 100%;height: 88px;}
+.home-strate-title p{text-align: center;font-size: 48px;color: #222222;line-height: 48px}
+.home-strate-title span{text-align: center;font-size: 24px;color: #333;margin-top: 20px;display: block}
+.home-strate-list{width: 100%;height: 20px;margin-top: 43px;}
+.home-strate-list li{float: left;font-size: 16px;color: #333333;padding-right: 22px;border-right: 1px solid #333;line-height: 16px;cursor: pointer;float: left;margin-right:22px}
+.home-strate-list p{width: 65px;height: 26px;text-align: center;line-height: 26px;font-size: 14px;color: #fff;border-radius: 5px;float:right;background: #084f2b;cursor: pointer}
+.home-strate-content{width: 100%;height: 472px;position: relative;margin-top: 34px}
+.home-strate-top{width: 100%;height: 350px}
+.home-new-left{float: left;width: 450px;height: 100%}
+.home-new-word{font-size: 24px;color: #333333;text-align: left;height: 80px;line-height: 36px}
+.home-new-info{width: 100%;height: 73px;border-bottom: 1px solid #999999;}
+.home-new-info>p{font-size: 14px;color: #999999;float: left;margin-right: 35px;line-height: 73px}
+.home-new-info>p:last-child{margin-right: 0;float: right}
+.home-new-look{width: 100%;height: 120px;margin-top: 30px;font-size: 16px;color: #666;text-align: left;line-height: 32px}
+.home-new-look>a{color: #084f2b}
+.home-new-right{float: right;width: 700px;height: 100%}
+.home-new-right>img{display: block;width: 100%;height: 100%}
+.home-strate-bottom{width: 100%;height: 94px;margin-top: 27px}
+.home-strate-bottom>li{float: left;width: 388px;height: 78px;padding:7px 0;border: 1px solid #fff;border-radius: 3px;margin-right: 15px;position: relative;}
+.home-strate-bottom>li:last-child{margin-right: 0}
+.home-strate-bottom>li:hover{border: 1px solid #084f2b}
+.home-strate-sug{float: left;width: 78px;height: 78px}
+.home-strate-sug>img{display: block;width: 100%;height: 100%}
+.home-sug-right{width: 300px;height: 100%;float: right;}
+.home-sug-right>p{font-size: 16px;color: #084f2b;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 95%;padding-top: 5px}
+.home-sug-right>span{display:block;font-size: 14px;color: #999;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 95%;padding-top: 8px}
+.home-sug-right>em{display:block;font-size: 12px;color: #999;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;width: 95%;padding-top: 6px;font-style: normal}
+.home-strate-zheng{position: absolute;width: 10px;height: 10px;right: 25px;bottom: 0;background: #17804b}
+
+
+
+/* 今朝21年 */
+.home-jinzhao{width: 1200px;margin: 0 auto;margin-top: 60px;overflow: hidden;}
+.home-jinzhao>img{display: block;width: 100%;}
+
+
+/* 热门推荐按开始 */
+.phome-commend{width: 100%;height: 110px;margin-top:45px}
+.phome-commend-center{width: 1200px;margin: 0 auto;}
+.phome-commend-list{width: 100%;height: 40px;border-bottom: 1px solid #c4c4c4;box-sizing: border-box}
+.phome-commend-list>li{float: left;width: 120px;height:100%;text-align: center;line-height: 40px;font-size: 16px;color: #333333;cursor: pointer;}
+.phome-commend-all{width: 100%;height: 52px;position: relative;}
+.phome-commend-info{width: 100%;height: 52px;position: absolute;left: 0;top: 0;display: none}
+.phome-commend-active{display: block}
+.phome-commend-info>li{float:left;margin-right: 20px;font-size: 16px;color: #333;line-height: 60px;}
+
+
+
+
+
+
+
+                                                        /* 案例产品页 */
+
+/* banner轮播图 */
+.pcase-banner {width: 100%;max-width: 1920px;height: auto;margin: 0 auto;/*height: 340px;*/position: relative;}
+.pcase-banner .swiper-button-next{width: 50px;height: 50px;background: url('../image/home/banner-left.jpg');right: 10% !important;}
+.pcase-banner .swiper-button-prev{width: 50px;height: 50px;background: url('../image/home/banner-right.jpg');left: 10% !important;}
+.pcase-banner .swiper-pagination-bullet{width: 16px;height: 16px;margin-right: 15px;background: #fff}
+.pcase-banner .swiper-pagination-bullet-active{background: #0a6c3a}
+
+/* 装修案例开始 */
+.pscene{width: 100%;height: auto;overflow: hidden;}
+.pscene-center{width: 1200px;height: auto;margin: 0 auto}
+.pscene-title{width: 100%;height: 87px;overflow: hidden;}
+.pscene-title-left{float: left;}
+.pscene-title-left p{font-size: 28px;color: #333;float: left;line-height: 87px;margin-right: 22px}
+.pscene-title-left span{font-size: 14px;color: #333;line-height: 99px}
+.pscene-title-right{float: right;color: #999999;font-size: 12px;line-height: 99px;cursor: pointer}
+.pscene-list{width: 100%;height: auto;}
+.pscene-list li{width: 387px;height: 388px;display: block;float: left;margin-right: 16.5px;border: 1px solid #e5e5e5;margin-bottom: 29px}
+.pscene-list li:nth-child(3n){margin-right: 0}
+.pscene-list-img{width: 100%;height: 258px;}
+.pscene-list-img img{display: block;width: 100%;height: 100%}
+.pscene-content{width: 100%;height: 130px}
+.pscene-photo{float: left;width: 75px;height: 75px;border-radius: 50%;margin: 27px}
+.pscene-photo img{display: block;width: 100%;height: 100%;border-radius: 50%}
+.pscene-case-info{float: left;width: 250px;margin: 21px 0 24px 0}
+.pscene-style{font-size: 16px;color: #333;width: 100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 16px;text-align: left}
+.pscene-home{font-size: 14px;color: #333;margin-top: 9px}
+.pscene-home span{padding-right: 11px;border-right: 1px solid #333;margin-right: 11px}
+.pscene-case-info a{display: block;width: 160px;height: 30px;background: #fff;color: #084f2b;text-align: center;line-height: 30px;font-size: 16px;border: 1px solid #084f2b;box-sizing: border-box;margin-top: 17px}
+.pscene-list>li:hover{box-shadow: 0px 0px 4px 4px #e5e5e5}
+.pscene-list>li:hover .pscene-case-info a{background: #084f2b;color: #fff}
+.pscene-title-right img{display: block;float: left;margin-top: 41px;margin-right: 10px}
+
+/* 在施工地开始 */
+.pcase-plant-list{width: 100%;height: auto;}
+.pcase-plant-list li{width: 285px;height: 304px;display: block;float: left;margin-right: 20px;border: 1px solid #e5e5e5;margin-bottom: 22px;box-sizing: border-box}
+.pcase-plant-list li:nth-child(4n){margin-right: 0}
+.pcase-plant-img{width: 100%;height: 190px;position: relative;overflow: hidden;}
+.pcase-plant-img img{display:block;width: 100%;height: 190px}
+.pcase-plant-content{width: 252px;height: 68px;margin: 0 auto;margin-top: 20px}
+.pcase-plant-addres{font-size: 18px;color: #333;width: 100%;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;line-height: 18px;text-align: left}
+.pcase-plant-all{margin-top: 17px}
+.pcase-plant-all p{font-size: 12px;padding-right: 21px;border-right:1px solid #e5e5e5;float: left;margin-right: 22px}
+.pcase-plant-all p span{display: block;margin-bottom: 11px}
+.pcase-plant-all p span:nth-child(2){margin-bottom: 0}
+.pcase-plant-all p span em{font-style: normal}
+.pcase-plant-all p:nth-child(2){padding-right: 0;border-right:0;margin-right: 0;margin-bottom: 0}
+.pcase-plant-visite{position: absolute;width: 100%;height: 40px;bottom: -40px;left: 0;background: #084f2b;color: #fff;text-align: center;line-height: 40px;font-size: 18px;}
+.pcase-plant-list li:hover{box-shadow: 0px 0px 4px 4px #e5e5e5}
+.pcase-plant-list li:hover .pcase-plant-visite{transform: translateY(-40px);transition: .5s;
+    -webkit-transform: translateY(-40px);-webkit-transition: .5s;
+    -moz-transform: translateY(-40px);-moz-transition: .5s;
+    -moz-transform: translateY(-40px);-moz-transition: .5s;
+    -o-transform: translateY(-40px);-o-transition: .5s;
+    -o-transform: translateY(-40px);-o-transition: .5s;
+    -ms-transform: translateY(-40px);-ms-transition: .5s;
+}
+
+
+                                                        /* 实景案例 */
+
+/* banner轮播图 */
+.preal-banner {width: 100%;max-width: 1920px;height: auto;margin: 0 auto;/*height: 340px;*/position: relative;}
+.preal-banner .swiper-button-next{width: 50px;height: 50px;background: url('../image/home/banner-left.jpg');right: 10% !important;}
+.preal-banner .swiper-button-prev{width: 50px;height: 50px;background: url('../image/home/banner-right.jpg');left: 10% !important;}
+.preal-banner .swiper-pagination-bullet{width: 16px;height: 16px;margin-right: 15px;background: #fff}
+.preal-banner .swiper-pagination-bullet-active{background: #0a6c3a!important}
+.preal-banner .swiper-pagination-bullet{width: 40px!important;height: 4px!important;border-radius: 0;background: #bfbfbf}
+.preal-center{position: absolute;left: 0;right: 0;top: 0;bottom: 0;margin: auto;width: 1200px;}
+.preal-banner-type{width: 480px;height: 360px;position: absolute;left: 0;top: 0;z-index: 10;}
+.preal-banner-type img{display:block;width: 480px;height: 360px}
+
+
+/* 装修案例 */
+.preal-case{width:100%;height: auto;overflow: hidden;}
+.preal-case-center{width: 1200px;height: auto;margin: 0 auto}
+.preal-case-title{width: 100%;height: 50px}
+.preal-case-title>p{text-align: left;font-size: 16px;color: #bfbfbf;line-height: 50px}
+.preal-case-title>p>span{color: #333333}
+.preal-left{width: 920px;height: auto;float: left;}
+.preal-list{width: 100%;}
+.preal-list>li{width: 452px;height: 434px;float: left;margin-right: 16px;border:1px solid #ececec;box-sizing: border-box}
+.preal-list>li:hover{box-shadow: 0px 0px 4px 4px #e5e5e5}
+.preal-list>li:nth-child(2n){margin-right: 0;margin-bottom: 19px}
+.preal-img{width: 100%;height: 292px}
+.preal-img>a>img{display:block;width: 100%;height: 100%}
+.preal-list-content{width: 100%;height: 142px}
+.preal-list-people{width: 84px;height: 84px;border-radius: 50%;margin: 37px 21px;float: left;}
+.preal-list-people>img{display:block;width: 100%;height: 100%;border-radius: 50%}
+.preal-list-detail{float: left;}
+.preal-list-effect{font-size: 16px;color: #333333;text-align: left;line-height: 16px;margin-top: 28px;width: 305px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.preal-list-style{font-size: 14px;color: #999999;text-align: left;margin-top: 11px}
+.preal-list-style>span{padding-right: 11px;border-right:1px solid #999;margin-right: 11px}
+.preal-list-style>span:last-child{border-right: 0;padding-left: 0;margin-right: 11px}
+.preal-list-ask{margin-top: 22px}
+.preal-list-design{float: left;width: 102px;height: 30px;background: #084f2b;color: #fff;text-align: center;line-height: 30px;font-size: 12px;cursor: pointer;margin-right: 10px}
+.preal-list-money{float: left;width: 147px;height: 30px;background: #fff;color:#084f2b;border: 1px solid #084f2b;text-align: center;line-height: 30px;font-size: 12px;cursor: pointer;box-sizing: border-box }
+.preal-right{width:238px;float: right}
+.preal-right>img{display: block;width: 100%}
+
+
+
+                                                            /* 在施工地 */
+
+/* 第一图 */
+
+/* 施工流程 */
+.pbuild{width:100%;height: auto;overflow: hidden;}
+.pbuild-center{width: 1200px;height: auto;margin: 0 auto}
+.pbuild-left{width: 920px;height: auto;float: left;}
+.pbuild-list{width: 100%;height: auto;}
+.pbuild-list>li{overflow: hidden;width: 100%;height: 290px;border: 1px solid #e5e5e5;box-sizing: border-box}
+.pbuild-list-img{width: 362px;height: 240px;margin: 29px 28px 0 0;float: left;}
+.pbuild-list-img>a>img{display: block;width: 100%;height: 100%}
+.pbuild-content{float: left;width: 528px}
+.pbuild-stance{width: 100%;height: auto;overflow: hidden;}
+.pbuild-stance-left{float: left;margin-top:29px}
+.pbuild-stance-title{height: 20px;margin-top: 12px;font-size: 16px}
+.pbuild-stance-title>h3{font-weight: normal;font-size: 20px;color: #333333;line-height: 20px;display: block;float: left;margin-right: 15px}
+.pbuild-stance-title>span{font-size: 12px;color: #333333;line-height: 20px}
+.pbuild-stance-title>span>em{font-weight: normal;font-size: 12px;color: #084f2b;font-style: normal}
+.pbuild-stance-type{margin-top: 27px;height: 14px;color: #333333;}
+.pbuild-stance-type>span,.pbuild-stance-area>span{font-size: 14px;display:block;float: left;width: 157px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis}
+.pbuild-stance-area{margin-top: 17px}
+.pbuild-stance-right{float:right;margin-right: 46px;margin-top: 37px;width: 100px;display: none}
+.pbuild-list>li:hover .pbuild-stance-right{display: block}
+.pbuild-stance-visite{width: 100%;height: 30px;font-size: 14px;color: #fff;text-align: center;line-height: 30px;background: #084f2b;cursor: pointer;}
+.pbuild-stance-look{display:block;width: 100%;height: 30px;font-size: 14px;color: #084f2b;text-align: center;line-height: 30px;background: #fff;border:1px solid #084f2b;box-sizing: border-box;margin-top: 13px;cursor: pointer;}
+.pbuild-process{margin-top: 45px}
+.pbuild-process-list{width: 48px;height:55px;float: left;margin-right: 32px;position: relative}
+.pbuild-process-list:last-child{margin-right:0}
+.pbuild-process-yes{width: 24px;height: 24px;border-radius: 50%;background: #999999;color: #fff;font-size: 12px;line-height: 24px;text-align: center;margin: 0 auto}
+.pbuild-process-word{margin-top: 20px;font-size: 12px;color: #333;text-align: center}
+.pbuild-process-line{position: absolute;top: 12px;right: -43px;width: 55px;height: 1px;background: #084f2b}
+.pbuild-process-active{background: #084f2b}
+.pbuild-right{float: right;width: 240px;height: auto}
+.pbuild-right img{display: block;width: 240px;height: auto}
+
+
+
+
+
+                                                /* 热装小区 */
+
+/* 内容 */
+
+.phot{width:100%;height: auto;overflow: hidden;}
+.phot-center{width: 1200px;height: auto;margin: 0 auto}
+.phot-left{width: 920px;height: auto;float: left;}
+.phot-list{width: 100%;height: auto;}
+.phot-list>li{overflow: hidden;width: 100%;height: 290px;border-bottom: 1px solid #e5e5e5;box-sizing: border-box}
+.phot-list-img{width: 362px;height: 240px;margin: 29px 28px 0 0;float: left;}
+.phot-list-img>a>img{display: block;width: 100%;height: 100%}
+.phot-stance{float: left;width: 528px;margin-top: 21px}
+.phot-stance-tilte{margin-top: 9px;font-size: 28px;color: #333333;text-align: left;line-height: 28px;overflow: hidden;}
+.phot-stance-num{width: 100%;margin-top: 10px;overflow: hidden;}
+.phot-stance-num>p{float: left;font-size: 14px;color: #333;line-height: 14px;margin-right: 12px}
+.phot-stance-num>p:last-child{margin-right: 0}
+.phot-stance-num>p>span{color: #084f2b}
+.phot-stance-word{margin-top: 20px;font-size: 14px;color: #333;}
+.phot-stance-wen{font-style: normal;line-height: 24px}
+.phot-stance-word>a{color:#084f2b}
+.phot-stance-free{width: 150px;height: 40px;margin-top: 50px;text-align: center;line-height: 40px;color: #fff;cursor: pointer;font-size: 16px;border-radius: 4px;background: #084f2b}
+.phot-right{float: right;width: 240px;height: auto}
+.phot-right img{display: block;width: 240px;height: auto}
+
+
+
+                                                    /* 设计报价页 */
+
+.poffer-house{width:100%;height: 1042px;background: #333333}
+.poffer-house-center{width: 1200px;height: 100%;margin: 0 auto;overflow: hidden;}
+.poffer-house-top{width: 100%;height: 168px;margin-top: 118px;}
+.poffer-house-list{float: left;height: 100%;}
+.poffer-house-list>li{position: relative;width: 141px;height: 168px;float: left;margin-right: 40px;cursor: pointer;}
+.poffer-house-list>li:last-child{margin-right: 0}
+.poffer-house-list>li:first-child{margin-left: 16px}
+.poffer-house-list>li>img{display: block;width: 100%}
+.poffer-house-list>li>span{position: absolute;width: 100%;text-align: center;top: 56px;color: #333333;font-size: 30px}
+.poffer-house-info{float: right;margin-right: 30px;height: 160px}
+.poffer-house-photo{float: left;width: 160px;height: 160px;margin-right: 27px;border-radius: 50%;background: #fff}
+.poffer-house-photo>img{display: block;width:140px;height: 140px;border-radius: 50%;margin: 0 auto;margin-top: 10px}
+.poffer-info-title{float: left;}
+.poffer-info-people{font-size: 24px;color: #fff;margin-top: 33px;text-align: left}
+.poffer-info-offer{width: 196px;height: 58px;background: #0a6c3a;color: #fff;text-align: center;line-height: 58px;border-radius: 4px;font-size: 24px;margin-top: 17px}
+.poffer-house-bottom{width: 100%;height: 663px;margin-top: 63px}
+.poffer-content{width: 100%;height: 100%;position: relative;}
+.poffer-content>li{position: absolute;left: 0;top:0;width: 100%;height: 100%}
+.poffer-content>li>img{display: block;width: 100%;height: 100%}
+
+.poffer-house-fff{background: #fff}
+.poffer-info-fff{float: left;margin-left: 70px;margin-right: 47px}
+
+/* 明星设计师专访 */
+#certify {position: relative;width: 1200px;margin: 0 auto}
+#certify .swiper-container {padding-bottom: 60px;}
+#certify .swiper-slide {width: 520px;height: 408px;background: #fff;box-shadow: 0 8px 30px #ddd;}
+#certify .swiper-slide img{display:block;}
+#certify .swiper-slide p {line-height: 98px;padding-top: 0;text-align: center;color: #636363;font-size: 1.1em;margin: 0;}
+#certify .swiper-pagination {width: 100%;bottom: 20px;}
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {margin: 0 5px;border: 3px solid #fff;background-color: #d5d5d5;width: 10px;height: 10px;opacity: 1;}
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {border: 3px solid #00aadc;background-color: #fff;}
+#certify .swiper-button-prev {left: -30px;width: 45px;height: 45px;background: url(../images/wm_button_icon.png) no-repeat;background-position: 0 0;background-size: 100%;}
+#certify .swiper-button-prev:hover {background-position: 0 -46px;background-size: 100%}
+#certify .swiper-button-next {right: -30px;width: 45px;height: 45px;background: url(../images/wm_button_icon.png) no-repeat;background-position: 0 -93px;background-size: 100%;}
+#certify .swiper-button-next:hover {background-position: 0 -139px;background-size: 100%}
+
+
+
+
+
+
+                                            /* 装修报价 */
+                                        
+.qzoffer-bottom {width: 1200px;height: 540px;left:0;right:0;top:20%;margin:auto;background: #fff;position: absolute;}
+.qzoffer-budget {float: left;padding: 95px 40px 0px 60px;width:420px;height: 360px;}
+.qzoffer-budget > h3 {font-size: 20px;color: #333;}
+.qzoffer-budget > h3 > span {margin-left: 10px;color: #f36f20;font-size: 12px;;}
+.qzoffer-budget em{font-style: normal}
+.qzoffer-form {width: 370px;padding-top: 50px;font-size: 14px;}
+.qzoffer-form-list {width: 100%;height: 40px;margin-bottom: 24px}
+.qzoffer-form-listdo {height: 90px;}
+.qzoffer-form-list > p {float: left;width: 24.5%;padding-right: 8px;line-height: 40px;font-size: 16px;color: #333;}
+.qzoffer-form-list > p > span {font-size: 24px;color: #fe5f00;vertical-align: middle;}
+.qzoffer-select {float: right;width: 265px;height: 100%;position: relative;}
+#select-city {display: block;float: left;width: 100%;height: 100%;outline: none;border: 1px solid #ccc;padding-left:10px }
+#select-dist {display: block;float: left;width: 60%;height: 100%;outline: none;border: 1px solid #ccc;}
+.qzoffer-select > input {width: 100%;height: 100%;outline: none;border: 1px solid #ccc;padding-left: 10px;}
+.qzoffer-select > span {position: absolute;right: 10px;top: 0px;font-size: 16px;line-height: 40px;color: #ccc;}
+
+.qzoffer-home {display: block;width: 85px;height: 40px;float: left;outline: navajowhite;border: 1px solid #ccc;margin-right: 5px;}
+.qzoffer-home:last-child {margin-right: 0px;}
+.qzoffer-rest {display: block;width: 130px;height: 40px;float: left;outline: navajowhite;border: 1px solid #ccc;margin-right: 5px;}
+.qzoffer-rest:last-child {margin-right: 0px;}
+.qzoffer-state{font-size: 14px;color: #333333;margin-top: 45px}
+
+.qzoffer-cost {float: right;width: 440px;height:300px;color: #333;font-size: 14px;margin-right: 40px;margin-top: 65px;padding: 0;}
+.qzoffer-cost-budget {font-size: 20px;text-align: center;margin-top: 30px;color: #333;}
+.qzoffer-cost-budget > span {display: inline-block;width: 120px;color: #dc3d1c;font-size: 30px;text-align: center;}
+.qzoffer-cost-budget > em {font-size: 16px;}
+.qzoffer-cost-material {width: 440px;height: 200px;border: 1px solid #e8e8e8;margin-top: 50px;}
+.qzoffer-cost-material > span {display: block;width: 50%;text-align: center;font-size: 14px;color: #333;line-height: 36px;float: left;margin-top:65px}
+.qzoffer-cost-material > span:nth-child(3),.qzoffer-cost-material > span:nth-child(4){margin-top: 35px}
+.qzoffer-cost-material > span > i {display: inline-block;width: 80px;color: #dc3d1c;font-size: 14px;text-align: center;font-style: normal}
+.qzoffer-cost-material > span > em {font-size: 12px;}
+.qzoffer-star {display: block;position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;margin: auto;width: 175px;height: 175px;border-radius: 50%;}
+.qzoffer-circle-shadow {width: 175px;height: 175px;border-radius: 50%;background: #f8cac0;}
+.qzoffer-hand{position: absolute;width: 88px;height: 102px;bottom: -100px;left: 56px;}
+.qzoffer-hand>img{display: block;width: 100%;height: 100%;animation: circle-scale 1.5s infinite ease-in-out;}
+@keyframes circle-scale {
+    0% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(0.6);
+    }
+}
+.qzoffer-cost-num{width: 100%;font-size: 16px;color: #333;text-align: center;line-height: 26px}
+.qzoffer-cost-num span{color: #dc3d1c}
+.qzoffer-circle {position: absolute;left: 0px;right: 0px;top: 0px;bottom: 0px;margin: auto;width: 125px;height: 125px;border-radius: 50%;background: #dc3d1c;font-size: 30px;color: #fff;text-align: center;line-height: 45px;}
+.qzoffer-circle span{display: block}
+.qzoffer-circle span:first-child{margin-top: 15px}
+
+
+
+                                        /* 顶级设计师页面 */
+/* 生活需要4步                                       */
+.plevel-live{width: 100%;height:1100px;position: relative}
+.plevel-live>img{display: block;width: 100%;height: 100%}
+.plevel-live-center{position: absolute;left: 0;right: 0;top:300px;margin: auto;width: 1030px}
+.plevel-live-num{width: 100%;height: 54px;overflow: hidden;position: relative}
+.plevel-live-num>li{width: 238px;height: 100%;float: left;margin-right: 26px;position: relative;cursor: pointer}
+.plevel-live-num>li:last-child{margin-right: 0}
+.plevel-live-line{position: absolute;width: 100%;height: 3px;background: #fff;left: 0;top: 26px;}
+.plevel-live-circle{width: 54px;height: 54px;border-radius: 50%;background: #fff;color: #309b84;font-size: 46px;text-align: center;line-height: 54px;position: absolute;left: 0;right: 0;top: 0;margin: auto}
+.plevel-live-list{width: 100%;height: 146px;margin-top: 20px}
+.plevel-live-list>li{width: 238px;height: 100%;float: left;margin-right: 26px;border-radius: 5px;background: #21726e}
+.plevel-live-list>li:last-child{margin-right: 0}
+.plevel-live-list>li>p{width: 100%;font-size: 30px;color: #facea5;line-height: 60px;margin-top: 14px;text-align: center}
+.plevel-live-list>li>span{display: block;width: 100%;font-size: 16px;color: #fff;line-height: 24px;text-align: center}
+.plevel-live-content{width: 842px;height: 310px;margin: 0 auto;margin-top: 36px;border:8px solid #76aaaa;box-sizing: border-box;position: relative}
+.plevel-live-san{width: 291px;height: 292px;position: absolute;left: 79px;top:64px;z-index: 20;}
+.plevel-live-san>img{display: block;width: 100%;height: 100%}
+.plevel-live-img{width: 500px;height: 320px;position: absolute;right: 74px;top:47px}
+.plevel-live-img>li{position: absolute;left: 0;top: 0;width: 100%;height: 100%}
+.plevel-live-img>li>img{display: block;width: 100%;height: 100%}
+.plevel-live-word{top: 112px;left: 18px;position: absolute;min-width: 130px;width: auto;}
+.plevel-live-word>span{font-size: 32px;color: #fff;position: absolute;display: none}
+.plevel-live-active{display: block!important;z-index: 10;}
+
+/* 80平米开始 */
+.plevel-two{width: 100%;height:1100px;position: relative}
+.plevel-two>img{display: block;width: 100%;height: 100%}
+.plevel-two-center{position: absolute;left: 0;right: 0;top:54px;margin: auto;width: 1200px}
+.plevel-two-top{width: 100%}
+.plevel-two-bottom{width: 100%;height: 540px;margin-top: 30px}
+.plevel-two-list{width:130px;height: 100%;float: left;margin: 0 33px 0 7px }
+.plevel-two-list>li{width: 130px;height: 120px;margin-bottom:18px;cursor: pointer;position: relative}
+.plevel-two-list>li>img{display: block;width: 100%;height: 100%}
+.plevel-two-list>li>span{position: absolute;width: 100%;top: 41px;left: 0;text-align: center;font-size: 24px;color: #fff;font-weight: bold}
+.plevel-two-img{float: right;width: 1030px;height: 540px;position: relative;}
+.plevel-two-img>li{position: absolute;left: 0;top: 0;width: 100%;height: 100%;display: none}
+.plevel-two-img>li>img{display: block;width: 100%;height: 100%}
+
+
+
+                                                    /* 一线选材开始 */
+.pray{width: 100%;height: 900px;position: relative;} 
+.pray>img{display: block;width: 100%;height: 100%}                                              
+.pray-high{position: absolute;width: 1200px;height: 550px;left: 0;right: 0;top: 240px;margin: auto;}
+.pray-high-left{width: 300px;height: 100%;float: left;}
+.pray-high-left>li{width: 100%;height: 110px;background: #fff;margin-bottom: 37px;cursor: pointer;float: left;position: relative;}
+.pray-high-left>li:last-child{margin-bottom: 0}
+.pray-high-left>li>p{margin-left: 4px;margin-top: 19px;font-size: 20px;color: #333333;line-height: 28px}
+.pray-high-left>li>p>em{width: 28px;height: 28px;border-radius: 50%;border:1px solid #333;font-style: normal;display: block;float: left;text-align: center;margin-right: 6px}
+.pray-high-left>li>span{display: block;margin: 8px 8px 0 38px;font-size: 14px;color: #666;overflow: hidden;}
+.pray-high-triangle{position: absolute;width: 11px;height: 25px;right: -11px;top: 0;bottom: 0;margin: auto;display: none}
+.pray-high-triangle img{display: block;height: 100%}
+.pray-high-right{width: 300px;height: 100%;float: right;}
+.pray-high-right>li{width: 100%;height: 110px;background: #fff;margin-bottom: 37px;cursor: pointer;float: left;position: relative}
+.pray-high-right>li:last-child{margin-bottom: 0}
+.pray-high-right>li>p{margin-left: 4px;margin-top: 19px;font-size: 20px;color: #333333;line-height: 28px}
+.pray-high-right>li>p>em{width: 28px;height: 28px;border-radius: 50%;border:1px solid #333;font-style: normal;display: block;float: left;text-align: center;margin-right: 6px}
+.pray-high-right>li>span{display: block;margin: 8px 8px 0 38px;font-size: 14px;color: #666;overflow: hidden;}
+
+.pray-high-triangles{position: absolute;width: 11px;height: 25px;left: -20px;top: 0;bottom: 0;margin: auto;display: none}
+.pray-high-triangles img{display: block;height: 100%}
+.pray-high-center{float: left;width: 500px;height: 100%;margin-left:50px;background: #fff;position: relative}
+.pray-high-one,.pray-high-two{position: absolute;width: 100%;height: 100%}
+.pray-high-one>li,.pray-high-two>li{position: absolute;width: 100%;height: 100%}
+.pray-high-one>li>img,.pray-high-two>li>img{display:block;width: 100%;height: 100%}
+.pray-high-active{z-index: 10;display: block!important;color: #fff!important}
+
+
+
+                                                        /* 标杆工程页面 */
+
+.sign-two{width: 100%;height: 1460px;position: relative}
+.sign-two>img{display: block;width: 100%;height: 100%}
+.sign-two-center{position: absolute;left: 0;right:0;top:312px;margin:auto;width: 1200px;height: 995px;overflow-y: scroll}
+.sing-two-scroll{width: 100%;height: auto}
+.sing-two-scroll>img{display: block;width: 100%}
+
+
+
+                                                        /* 4.0生产基地 */
+ /* 英迈木门                                                        */
+.pbase-door{width: 100%;height: 1228px;position: relative}
+.pbase-door>img{display: block;width: 100%;height: 100%}
+.pbase-door-center{position: absolute;width: 1200px;height: 610px;top: 360px;left: 0;right: 0;margin:auto;}
+.pbase-door-center .swiper-slide{width: 290px;height: 610px}
+.pbase-door-center .swiper-button-next{width: 52px;height: 52px;background-image: url('../image/base/b-right.png');background-size:100%;background-color:rgba(0,0,0,0);right:-60px;top:45%}
+.pbase-door-center .swiper-button-prev{width: 52px;height: 52px;background-image: url('../image/base/b-left.png');background-size:100%;background-color:rgba(0,0,0,0);left:-60px;top:45%}
+.pbase-door-truse{width: 100%;background: rgba(0,0,0,0.2);margin-top: 20px}
+.pbase-door-truse p{font-size: 16px;color: #fff;margin: 0px 22px;padding:26px 0}
+.pbase-door-ask{width: 320px;height: 45px;margin: 0 auto;margin-top:40px;color: #fff;font-size: 22px;text-align: center;line-height: 45px;background: rgba(0,0,0,0.3);cursor: pointer}
+
+/* 全套家具 */
+.pbase-house{width: 100%;height: 977px;position: relative}
+.pbase-house>img{display: block;width: 100%;height: 100%}
+.pbase-house-center{position: absolute;width: 1200px;height: 392px;top: 420px;left: 0;right: 0;margin:auto;background: rgba(255,255,255,0.3)}
+.pbase-house-center .swiper-slide{width: 260px;height: 242px}
+.pbase-house-center .swiper-button-next{width: 52px;height: 52px;background-image: url('../image/base/b-right.png');background-size:100%;background-color:rgba(0,0,0,0);right:-60px;top:26%}
+.pbase-house-center .swiper-button-prev{width: 52px;height: 52px;background-image: url('../image/base/b-left.png');background-size:100%;background-color:rgba(0,0,0,0);left:-60px;top:26%}
+.pbase-house-truse{width: 100%;margin-top: 0px}
+.pbase-house-truse p{font-size: 16px;color: #000;margin: 0px 22px;padding:26px 0}
+.pbase-house-ask{width: 320px;height: 45px;margin: 0 auto;margin-top:40px;color: #000;font-size: 22px;text-align: center;line-height: 45px;background: rgba(0,0,0,0.3);cursor: pointer;border:1px solid #169bd5;box-sizing: border-box}
+
+/* 英迈橱柜 */
+.pbase-board{width: 100%;height: 1070px;position: relative}
+.pbase-board>img{display: block;width: 100%;height: 100%}
+.pc{width: 100%;height: 424px;position: absolute;left: 0;top:423px}
+.pc-slide {width: 100%;height: 100%;}
+.pc-slide-nei{width: 100%;height: 100%;margin: 0 auto;position: relative}
+.view{width: 650px;height: 100%;position: absolute;top:-75px;z-index:200;left: 0;right:0;margin: auto;}
+.view .swiper-container {width: 100%;height: 100%;margin: 0 auto;border:4px solid #1b8cbd;box-sizing: border-box;}
+.view .swiper-wrapper{width: 100%;margin: 0 auto;}
+.view .swiper-slide{width: 100%;height: auto;margin: 0 auto;}
+.swiper-slide-img{position: absolute;width: 100%;height: 100%;top: 0;bottom: 0;left: 0;right: 0;margin: auto;}
+.swiper-slide-center{width: auto;margin: 0 auto;}
+.swiper-slide-img img{display: block;height: auto;max-height: 100%;width: auto;max-width: 100%;margin: 0 auto;/*position: relative;*/}
+.view .arrow-left {width: 50%;height: 100%;position: absolute;left: 0px;top: 0px;z-index: 333;background: rgba(0,0,0,0);cursor: url("data:application/octet-stream;base64,AAACAAEAICAAAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAPDwAAAAAAAAAAAAAAAAAA8A8AAAAAAAAAAAAAAAAADwAPAAAAAAAAAAAAAAAAAPAADwAAAAAAAAAAAAAAAA8AAA8AAAAAAAAAAAAAAADwAAAPAAAAAAAAAAAAAAAPAAAADwAAAAAAAAAAAAAA8AAAAA//////////8AAADwAAAAAAAAAAAAAAAPAAAPAAAAAAAAAAAAAAAADwAA8AAAAAAAAAAAAAAAAA8ADwAAAAAAAAAAAAAAAAAPAADwAAAAAAAAAAAAAAAADwAADwAAAAAAAAAAAAAAAA8AAADwAAAAAAAAAAAAAAAPAAAADwAAAAD//////////wAAAADwAAAA8AAAAAAAAAAAAAAADwAAAPAAAAAAAAAAAAAAAADwAADwAAAAAAAAAAAAAAAADwAA8AAAAAAAAAAAAAAAAADwAPAAAAAAAAAAAAAAAAAADwDwAAAAAAAAAAAAAAAAAADw8AAAAAAAAAAAAAAAAAAAD/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////z////4////8P///+D////A////gP///wD///4A///8AAAB+AAAAfAAAAHgAAABwAAAAeAAAAHwAAAB+AAAAfwAAAH+AP///wD///+A////wP///+D////w////+P////z//////////////////w=="), default;}
+.view .arrow-right {width: 50%;height: 100%;position: absolute;right: 0px;top: 0px;background: rgba(0,0,0,0);background-color: #fff;opacity: 0;z-index: 333;cursor: url("data:application/octet-stream;base64,AAACAAEAICAAAAAAAADoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAgAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAAAP8AAP8AAAD//wD/AAAA/wD/AP//AAD///8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAPDwAAAAAAAAAAAAAAAAAADwDwAAAAAAAAAAAAAAAAAA8ADwAAAAAAAAAAAAAAAAAPAADwAAAAAAAAAAAAAAAADwAADwAAAAAAAAAAAAAAAA8AAADwAAAAAAAAAAAAAAAPAAAADwAAAAD//////////wAAAADwAAAA8AAAAAAAAAAAAAAADwAAAPAAAAAAAAAAAAAAAADwAADwAAAAAAAAAAAAAAAADwAA8AAAAAAAAAAAAAAAAADwAPAAAAAAAAAAAAAAAAAPAADwAAAAAAAAAAAAAAAA8AAA8AAAAAAAAAAAAAAADwAAAP//////////AAAAAPAAAAAAAAAAAAAADwAAAA8AAAAAAAAAAAAAAA8AAADwAAAAAAAAAAAAAAAPAAAPAAAAAAAAAAAAAAAADwAA8AAAAAAAAAAAAAAAAA8ADwAAAAAAAAAAAAAAAAAPAPAAAAAAAAAAAAAAAAAADw8AAAAAAAAAAAAAAAAAAA/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD///////////////////////8/////H////w////8H////A////wH///8A////AH+AAAA/gAAAH4AAAA+AAAAHgAAAA4AAAAeAAAAPgAAAH4AAAD///wB///8A////Af///wP///8H////D////x////8//////////////////w=="), default;}
+.view .swiper-slide img{display:block;width: 100%;height: 100%;margin: 0 auto;}
+.preview {width: 100%;height: 288px;margin: 0 auto;margin-top:2%;position: relative;/*overflow: hidden;*/}
+.preview .swiper-container {width: 100%;height: 288px;border: 4px solid #072332;margin: 0 auto;box-sizing: border-box;}
+.preview .swiper-container .swiper-wrapper{width: 100%;margin: 0 auto;overflow:  hidden;}
+.preview .swiper-slide {width: 340px;height: 280px;border: 1px #fff solid;margin-right: 1px;}
+.preview .arrow-left {background: url("../images/feel3.png") no-repeat left top;position: absolute;left: 0;top: 50%;margin-top: -9px;width: 9px;height: 18px;z-index: 210;}
+.preview .arrow-right {background: url("../images/feel4.png") no-repeat left bottom;position: absolute;right: 0;top: 50%;margin-top: -9px;width: 9px;height: 18px;z-index: 210;}
+.preview .swiper-container .swiper-wrapper .swiper-slide img {display: block;width: 100%;height: 100%;}
+.preview .swiper-slide:hover{cursor: pointer;border: 1px solid green;}
+.preview .active-nav{width: 340px;height: 280px;border: 1px solid green;}
+
+
+
+                                                    /* 热装小区详情页 */
+
+.phpar{width: 100%;height: auto}
+.phpar-center{width: 1200px;height: auto;margin: 0 auto}
+.phpar-left{float: left;width: 920px;height: auto}
+.phpar-left>img{display: block;width: 100%;}
+.phpar-list{width: 100%;height: 41px;border-top:1px solid #c4c4c4;border-bottom: 1px solid #c4c4c4}  
+.phpar-list>li{width: 120px;height: 100%;color: #333333;font-size: 16px;line-height: 41px;text-align: center;float: left;cursor: pointer;}
+.phpar-list-active{border-bottom: 2px solid #084f2b;color: #084f2b!important}
+.phpar-list>li:hover{border-bottom: 2px solid #084f2b;color: #084f2b!important} 
+.phpar-right{float: right;width: 240px}
+.phpar-right>img{display: block;width: 100%}    
+
+
+
+                                                /* 工地详情页 */
+
+.home-all{width: 100%;height: 100vh;position: fixed;left: -100%;top: 0;background: rgba(0,0,0,0.5)} 
+
+.home-shadow{position: absolute;width: 800px;height: 600px;left: 0;right: 0;margin: auto;top: 50%;margin-top:-300px;background: #fff;z-index: 10;}  
+.home-shadow .swiper-container{width: 100%;height: 100% }
+.home-shadow .swiper-container .swiper-wrapper{width: 100%;height: 100%!important}
+.home-shadow .swiper-button-next{width: 50px;height: 50px;background: url('../image/home/banner-left.jpg');right: 10% !important;}
+.home-shadow .swiper-button-prev{width: 50px;height: 50px;background: url('../image/home/banner-right.jpg');left: 10% !important;}
+.home-shadow .swiper-pagination-bullet{width: 16px;height: 16px;margin-right: 15px;background: #fff}
+.home-shadow .swiper-slide{width: 100%!important;height: 100%!important}
+.home-shadow .swiper-slide img{display: block;width: 100%;height: 100%}
+.home-shadow-close{position: absolute;font-size: 24px;top: -18px;right: -18px;color: #fff;cursor: pointer;}
+                                           
+
+
+
+
+                                                        /* 赵明瑞样式 */
+
+                                                        
+/**
+ * ============================================================================
+ * 产品页面： 产品列表页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年06月27日
+*/
+#Product_List {width: 100%; max-width: 1920px;  margin: 0 auto;overflow: hidden; zoom: 1; height: 1900px;}
+#Product_List .Product_title{width: 1200px; margin: 0 auto;}
+#Product_List .Product_title>span:first-child{ width: 94px; height: 14px; font-family: MicrosoftYaHei; font-size: 14px; font-weight: normal; font-stretch: normal; line-height: 38px; letter-spacing: 0px; color: #999999; }
+#Product_List .Product_title .text-style-1 { font-family: MicrosoftYaHei; font-size: 14px; font-weight: normal; letter-spacing: 0px; color: #222222;}
+#Product_List section{width: 1220px; margin: 0 auto;  overflow: hidden; position: relative; height: 1900px;}
+#Product_List .Product_Left{float: left;width: 926px;height: 450px;}
+#Product_List .Product_Left .Product_Leftlunbo{ width: 440px; float: left; height: 444px;}
+#Product_List .Product_Right{ position: absolute; top: 0; right: 0;}
+
+#Product_List .Product_Left .swiper-container{width:82%;height:300px;margin-left:auto;margin-right:auto}
+#Product_List .Product_Left .swiper-slide{background-size:cover;background-position:center}
+#Product_List .Product_Left .swiper-slide img{width: 100%; height: 100%; object-fit: cover;}
+#Product_List .Product_Left .gallery-top{height:80%;width:100%}
+#Product_List .Product_Left .gallery-thumbs{height: 16%;box-sizing:border-box;padding:10px 0;}
+#Product_List .Product_Left .gallery-thumbs .swiper-slide{width:25%;height:100%;/* opacity:.4;*/ }
+#Product_List .Product_Left .gallery-thumbs .swiper-slide-thumb-active{opacity:1; box-shadow: 0 0 2px 1px #000;}
+#Product_List .Product_Left .swiper-button-next{right: -31px;/* border: #0000FF solid 1px; */background: url(../img/product/right.png) no-repeat;background-size: 100% 100%;width: 20px;height: 30px;top: 43px;}
+#Product_List .Product_Left .swiper-button-prev{left: -31px;/* border: #0000FF solid 1px; */background: url(../img/product/left.png) no-repeat;background-size: 100% 100%;width: 20px;height: 30px;top: 43px;}
+#Product_List .Product_Left  .Product_Leftcont{float: right;}
+
+/**
+ * ============================================================================
+ * 产品页面： 英迈整装样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年06月27日
+*/
+.Yingmai-fist{width: 100%; max-width: 1920px;  margin: 0 auto;}
+.Yingmai-fist .Yingmai-subject{width: 100%; background: #2D97AE;}
+.Yingmai-trbackes{background: #fff!important; color: #437B58;}
+.Yingmai-trbackes2{background: #4290A0!important; color: #fff;}
+/* 中间轮播图 */
+.Yingmai-fist .Yingmai-Wheel-planting{width: 100%; height: auto; background: url(../img/Yingmai_06.jpg) no-repeat; background-size: 100%;} 
+.Yingmai-title1{width: 100%; position: relative}
+.Yingmai-fist .Yingmai-Tabqiehuan{width: 1200px; height: 700px;  margin: 0 auto; position: absolute; top: 200px; left: 0; right: 0; left: 0; margin: auto;}
+/* 上部选项卡 */
+.Yingmai-fist .Yingmai-Tabqiehuan ul {width: 180px; background: rgba(0,0,0,0.4); position: absolute; top: 0px; z-index: 9;}
+.Yingmai-fist .Yingmai-Tabqiehuan ul li{width: 180px; height: 100px; line-height: 100px; font-size: 22px; text-align: center; color: #fff; cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .3s; -ms-transition: all .3s; -o-transition: all .3s; transition: all .3s; position: relative;}
+.Yingmai-fist .Yingmai-Tabqiehuan ul li p{margin: 0;position: absolute;top: 2px;bottom: 0;margin: auto;left: 9px;/* font-size: 25px; */width: 45px;line-height: 45px;height: 45px;/* border: 1px #f00 solid; */border-radius: 50%;background: #4290A0;}
+.Yingmai-fist .Yingmai-Tabqiehuan ul li i{font-size: 24px;}
+.Yingmai-fist .Yingmai-triangle{ position: absolute; right: -50px; top: 0; width:0;  height:0; border-top:50px solid transparent; border-bottom: 50px solid transparent; border-left: 50px solid rgba(11,129,73,0.6);}
+.blackyingmai{background: rgba(11,129,73,0.6); display: block;}
+.Yingmai-fist .Yingmai-Tabqiehuan .contnt div{position: absolute; top: 0; color: #000; display: none; cursor: pointer; cursor: pointer;}
+.changyingmai{background: rgba(11,129,73,0.6);}
+.Yingmai-fist .Yingmai-Tabqiehuan .contnt div:nth-child(1){display: block;}
+.Yingmai-fist .Yingmai-triangle{display: none;}
+/* lunbo */
+.Yingmai-fist .Yingmai-lunbo{position: relative;}
+.Yingmai-fist .Yingmai-lunboxq{margin:0 auto;}
+/*12款实景开始*/
+.Yingmai-fist .live{width: 100%;overflow: hidden}
+.Yingmai-fist .live-banner{width: 100%;max-width:1920px;height:670px;margin: 0 auto;}
+.Yingmai-fist .live-item{width: 100%;height:100%;}
+.Yingmai-fist .slider{width:100%;min-width:1200px;height:670px;position:relative;overflow:hidden;background:#fff;text-align:center;}
+.Yingmai-fist .slider .bd{width:1200px;position:absolute;left:50%;margin-left:-600px}
+.Yingmai-fist .slider .bd li{width:1200px;overflow:hidden;}
+.Yingmai-fist .slider .bd li img{display:block;width:1200px;height:670px;}
+.Yingmai-fist .slider .tempWrap{overflow:visible !important}
+.Yingmai-fist .slider .tempWrap ul{margin-left:-1200px !important;}
+.Yingmai-fist .slider .hd{position:absolute;width:35px;right:15%;z-index:1;top:15%;text-align:center;}
+.Yingmai-fist .slider .hd li{display:inline-block;zoom:1;width:29px;height:29px;border-radius: 50%;background:rgba(0,0,0,0.8);cursor:pointer;filter:alpha(opacity=60);opacity:0.6;font-size: 16px;color: #fff;line-height: 29px;margin: 0 auto;margin-top: 9px;}
+.Yingmai-fist .slider .hd li.on{background:#0C8149;filter:alpha(opacity=100);opacity:1;color: #fff;width:35px;height:35px;line-height: 35px}
+.Yingmai-fist .slider .pnBtn{position:absolute;z-index:1;top:0;width:100%;height:670px;cursor:pointer;background: rgba(0,0,0,0.9)}
+.Yingmai-fist .slider .prev{left:-50%;margin-left:-600px;}
+.Yingmai-fist .slider .next{left:50%;margin-left:600px;}
+.Yingmai-fist .slider .prev .arrow{right:0;background:url(../image/slider-arrow.png) -120px 0 no-repeat;}
+.Yingmai-fist .slider .next .arrow{left:0;background:url(../image/slider-arrow.png) 0 0 no-repeat;}
+.Yingmai-fist .live-list{width: 100%;height:100%;margin: 0 auto;position: relative}
+.Yingmai-fist .live-img{display: block;width: 100%;}
+.Yingmai-fist .live-img>img{display: block;width: 100%}
+.Yingmai-fist .live-center{width: 1200px;position: absolute;left: 0;top:100px;right: 0;margin: auto}
+.Yingmai-fist .live-content{width: 515px;margin-left: 13px;background: rgba(0,0,0,0.37);padding: 35px 25px 25px 25px}
+.Yingmai-fist .live-content p{font-size: 45px;color: #fff;line-height: 100%;text-align: left;padding-bottom: 8px}
+.Yingmai-fist .live-content p span{font-size: 26px;color: #fff;position: absolute;top: 40px;margin-left:10px;}
+.Yingmai-fist .live-content i{font-style: normal;font-size: 16px;color: #fff;line-height: 28px;text-align: left;display: block;}
+.Yingmai-fist .live-content a{font-size: 24px;background: #dc0000;color: #fff;padding: 20px 47px;margin-top: 20px;display: inline-block}
+
+
+/**
+ * ============================================================================
+ * 产品页面：lao房适装样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年06月27日
+*/
+#New-house {width: 100%; max-width: 1920px; margin: 0 auto;}
+#New-house .New-housebanner{width: 100%; max-width: 1920px; margin: 0 auto; height: 700px; position: relative;}
+/*中间选项卡 */
+#New-house .Yingmai-Tabqiehuan{width: 100%; }
+#New-house .Yingmai-Tabqiehuan{width: 1200px; height: 700px;  margin: 0 auto; position: absolute; top: 0px; left: 0; right: 0; left: 0; margin: auto;}
+/* 上部选项卡 */
+#New-house .Yingmai-Tabqiehuan ul {width: 100px; position: absolute;top: 0px;z-index: 9;}
+#New-house .Yingmai-Tabqiehuan ul li{width: 100px;height: 90px;line-height: 90px; background: #fff; font-size: 22px;text-align: center;color: #333;cursor: pointer; -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;position: relative; margin-bottom: 10px;}
+#New-house .Yingmai-triangle{position: absolute;right: -24px;top: 0;bottom: 0;margin: auto;width:0;height:0;border-top: 16px solid transparent;border-bottom: 16px solid transparent;border-left: 25px solid rgba(246,179,127,1);}
+.changyingmai36{background: rgba(246,179,127,1)!important; display: block;}
+#New-house .New-housebanner .contnt{width: 100%;}
+#New-house .New-housebanner .contnt div{position: absolute; top: 0; color: #000; display: none; cursor: pointer; cursor: pointer; -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#New-house .New-housebanner .contnt div img{height: 700px; object-fit: cover; }
+.changyingmai2{background: rgba(246,179,127,1)!important; color: #fff!important;}
+#New-house .New-housebanner .contnt div:nth-child(1){display: block;}
+#New-house .Yingmai-triangle{display: none;}
+/* 英迈第二个选项卡切换 */
+#New-house .New-housTabqie{width: 1200px; margin: 0 auto;  zoom: 1; overflow: hidden; zoom: 1; position: relative;}
+#New-house  .New-housTabqie{}
+#New-house  .New-housTabqie .title-old{float: right;width: 1020px;margin-top: 50px;}
+#New-house  .New-housTabqie .title-old span:nth-child(1){font-size: 32px; color: #333; }
+#New-house  .New-housTabqie .title-old span:nth-child(2){font-size: 20px; color: #333; letter-spacing: 1.5px;}
+#New-house  .New-housTabqie .title-old p{font-size: 18px; color: #333; line-height: 36px; letter-spacing: 1.5px;}
+#New-house .New-housback{background: #FBF7EE; z-index: -20;}
+/* touxiang */
+#New-house  .New-housTabqie  .Head-portrait{z-index: 3;width: 150px;height: 150px;position: absolute;top: 0;border: 2px #865230 solid;border-radius: 50%;}
+#New-house  .New-housTabqie  .Head-portrait img{width: 130px; height: 130px; border-radius: 50%;position: absolute; top: 0; bottom: 0; left: 0; right: 0; margin: auto;}
+#New-house  .New-housTabqie ul{margin-top: 175px;margin-left: 22px;z-index: 8;}
+#New-house  .New-housTabqie ul li{border: 2px #865230 solid; width: 105px;height: 105px;line-height: 105px; border-radius: 50%; position: relative; margin-bottom: 15px;}
+#New-house  .New-housTabqie ul li a{width: 90px;height: 90px;line-height: 90px; display: block; font-size: 22px;text-align: center;color: #333;cursor: pointer; border-radius: 50%; margin: 0 auto; position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); background: #865230; color: #fff;}
+.changyingmai3{background: #BB7243!important;}
+/* #New-house  .New-housTabqie ul li a:hover{background: #BB7243;-webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;} */
+.new_hover{background: #BB7243!important;-webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#New-house  .New-housTabqie ul li{z-index: 3;border: 2px #BB7243 solid;-webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+.live-newhouse{position: absolute;top: 18px;left: 76px;z-index: 1;width:2px;height: 686px;background: #865230;}
+
+#New-house .New-houscontent{position: absolute;top: 123px;right: 0; color: #00f;width: 1035px;height: 636px;}
+#New-house .New-housTabqie .New-houscontent div{ color:#00f; display: none; cursor: pointer; cursor: pointer;  width: 50px; height: 40px; width: 1035px; height: 636px;}
+#New-house .New-housTabqie .New-houscontent div:nth-child(1){display: block;}
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：799页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年06月28日
+*/
+#New-799 {width: 100%; max-width: 1920px; margin: 0 auto;}
+#New-799 .New-housebanner{width: 100%; max-width: 1920px; margin: 0 auto; height: 700px; position: relative;}
+/*中间选项卡 */
+#New-799 .Yingmai-Tabqiehuan{width: 100%; }
+#New-799 .Yingmai-Tabqiehuan{width: 1200px; height: 700px;  margin: 0 auto; position: absolute; top: 0px; left: 0; right: 0; left: 0; margin: auto;}
+/* 上部选项卡 */
+#New-799 .Yingmai-Tabqiehuan ul {width: 100px; position: absolute;top: 0px;z-index: 9;}
+#New-799 .Yingmai-Tabqiehuan ul li{width: 100px;height: 90px;line-height: 90px; background: #fff; font-size: 22px;text-align: center;color: #333;cursor: pointer; -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;position: relative; margin-bottom: 10px;}
+
+#New-799 .Yingmai-triangle{position: absolute;right: -24px;top: 0;bottom: 0;margin: auto;width:0;height:0;border-top: 16px solid transparent;border-bottom: 16px solid transparent;border-left: 25px solid rgba(60,151,134,1);}
+.blackyingmai3{background: rgba(60,151,134,1)!important; display: block; color: #fff!important;}
+#New-799 .New-housebanner .contnt{width: 100%;}
+#New-799 .New-housebanner .contnt div{position: absolute; top: 0; color: #000; display: none; cursor: pointer; cursor: pointer; -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#New-799 .New-housebanner .contnt div img{height: 700px; object-fit: cover; }
+.changyingmai2{background: rgba(60,151,134,1)!important; color: #fff!important;}
+#New-799 .New-housebanner .contnt div:nth-child(1){display: block;}
+#New-799 .Yingmai-triangle{display: none;}
+
+
+
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：1+N局部装修页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年06月28日
+*/
+#Local-1N {width: 100%; max-width: 1920px; margin: 0 auto;}
+#Local-1N .Local-1Nlunbo{/* border: 1px #f00 solid; */width: 1200px;height: 692px;margin: 0 auto;zoom: 1;}
+#Local-1N .Local-1Nlunbo>ul{ overflow: hidden; zoom: 1;}
+#Local-1N .Local-1Nlunbo>ul li{width: 280px; height: 70px; line-height: 70px; text-align: center; font-size: 32px; color: #333; border:1px #16804D dashed; float: left; margin-right: 24px; -webkit-transition: all .5s;-moz-transition: all .5s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s; cursor: pointer;}
+#Local-1N .Local-1Nlunbo>ul li:last-child{margin-right: 0;}
+#Local-1N .Local-1Ncontent{position: relative; margin-top: 20px;}
+#Local-1N .Local-1Ncontent>div{ position: absolute; top: 0; width: 1200px; height: 50px; display: none;}
+#Local-1N .Local-1Ncontent>div:nth-child(1){ display: block;}
+.Local-disblsck{display: block; background: #16804D; color: #FFFFFF!important;}
+
+
+
+#Local-1N .Local-1Nlunbo .swiper-container { width: 100% ;height: 300px; margin-left: auto;  margin-right: auto;}
+#Local-1N .Local-1Nlunbo .swiper-slide { background-size: cover; background-position: center; cursor: pointer;}
+#Local-1N .Local-1Nlunbo .gallery-top { height: 80%; width: 100%;}
+#Local-1N .Local-1Nlunbo .gallery-thumbs {height: 20%;box-sizing: border-box;padding: 10px 0;}
+#Local-1N .Local-1Nlunbo .gallery-thumbs .swiper-slide { width:25%; height: 100%;}
+#Local-1N .Local-1Nlunbo .gallery-thumbs .swiper-slide-thumb-active {opacity: 1; border: 2px #0E9668 solid!important;}
+#Local-1N .Local-1Nlunbo .gallery-thumbs img{display: block;}
+#Local-1N .Local-1Nlunbo .gallery-thumbs {width: 1000px;/* border: 1px #00f solid; */}
+#Local-1N .Local-1Nlunbo {position: relative; margin: 30px auto;}
+/* 箭头样式 */
+#Local-1N .Local-1Nlunbo .swiper-button-next{background: url(../img/local/right.png) no-repeat;background-size: 100% 100%;/* border: 1px #000 solid; */width: 34px;height: 60px;  outline: none;}
+#Local-1N .Local-1Nlunbo .swiper-button-prev{background: url(../img/local/left.png) no-repeat;background-size: 100% 100%;/* border: 1px #000 solid; */width: 34px;height: 60px; outline: none;}
+#Local-1N .Local-1Nlunbo .swiper-button-next{top: 528px;right: 30px;}
+#Local-1N .Local-1Nlunbo .swiper-button-prev{top: 528px;left: 30px;}
+#Local-1N .Local-1Nlunbo .gallery-thumbs .swiper-slide{/* margin-right: 14px; */ border: 2px #fff solid; cursor: pointer;}
+
+
+
+/* 第二个轮播图 小改动变为大生活 */
+#Local-1N .Local-1Nlunbo2{width: 1200px; height: 600px;  margin: 0 auto 90px; position: relative;}
+/* 箭头样式 */
+#Local-1N .Local-1Nlunbo2 .swiper-button-next{background: url(../img/local/right3.png) no-repeat;background-size: 100%;background-position: center center;width: 30px;height: 120px;outline: none;}
+#Local-1N .Local-1Nlunbo2 .swiper-button-prev{background: url(../img/local/left3.png) no-repeat;background-size: 100%;width: 30px;height: 120px;outline: none;background-position: center center;}
+#Local-1N .Local-1Nlunbo2 .swiper-button-next{top: 0;bottom:0;margin: auto;right: -45px;}
+#Local-1N .Local-1Nlunbo2 .swiper-button-prev{top: 0;bottom:0;margin: auto;left: -45px;}
+/* 结束轮播图2 */
+
+/* 第3个轮播图 小空间大亮点 */
+#Local-1N .Local-1Nlunbo3{width: 1200px; height: 600px;  margin: 0 auto 90px; position: relative;}
+/* 箭头样式 */
+#Local-1N .Local-1Nlunbo3 .swiper-button-next{background: url(../img/local/right3.png) no-repeat rgba(0,0,0,0.9);background-size: 65%;background-position: center center;width: 50px;height: 70px;outline: none;}
+#Local-1N .Local-1Nlunbo3 .swiper-button-prev{background: url(../img/local/left3.png) no-repeat rgba(0,0,0,0.9);background-size: 65%;width: 50px;height: 70px;outline: none;background-position: center center;}
+#Local-1N .Local-1Nlunbo3 .swiper-button-next{top: 0;bottom:0;margin: auto;right: -60px;}
+#Local-1N .Local-1Nlunbo3 .swiper-button-prev{top: 0;bottom:0;margin: auto;left: -60px;}
+/* 结束轮播图3 */
+
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：新房套餐页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#New_House{width:100%; max-width: 1920px; margin: 0 auto; }
+#New_House .New_Houselunbo{margin: 0 auto; height: 800px; }
+#New_House .New_Houselunbo .New_housefist{margin: 0 auto;overflow: hidden;width: 100%;height: 780px;}
+/* 第一个轮播图 */
+#New_House .banner{position:relative;width:100%;height:700px;}
+#New_House .banner .b_main{position:relative;width:100%;height:700px; top: 20px;}
+#New_House  .banner .b_main .b_m_pic{position:relative;width:100;height:700px}
+#New_House  .b_main .b_m_pic li{position:absolute;width:100%;height:700px;top:0;left:0; }
+#New_House  .b_list{width: 1200px; height: 50px; margin: 0 auto;}
+#New_House .b_list ul{width: 1200px; margin: 0 auto;}
+#New_House .b_list ul li{width:240px;height:50px;float:left;background:#DCDCDC; cursor: pointer; text-align: center; font-size: 24px; line-height: 50px; color: #000; position: relative;}
+#New_House  .b_list ul li>span{position: absolute;bottom: -20px; left: 0; right: 0; margin: auto; width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-top: 20px solid #263344; display: none;}
+#New_House  .b_list ul .l_hover, #New_House .b_list ul .l_click{background:#263344;color: #fff;}
+#New_House .l_click2{display: block!important;}
+#New_House .b_btn div{position:absolute;width:100px;height:100px;background:rgba(0,0,0,0.7); font-size:60px;color:white;text-align:center;line-height:100px;top:50%;margin-top:-80px;cursor:pointer;}
+#New_House .b_btn .b_left{left:0;border-radius:50%}.b_btn .b_right{right:0;border-radius:50%}
+/* 第二个选项卡切换 */
+#New_House .New_HouselunboTab{height: 700px; padding-top: 120px; position: relative; background: -webkit-linear-gradient(90deg, #F2BFA2,#FAE5DA, #fff,#FAE5DA,#F2BFA2); /* Safari 5.1 - 6.0 */ background: -o-linear-gradient(90deg, #F2BFA2,#FAE5DA, #fff,#FAE5DA,#F2BFA2); /* Opera 11.1 - 12.0 */ background: -moz-linear-gradient(90deg, #F2BFA2,#FAE5DA, #fff,#FAE5DA,#F2BFA2); /* Firefox 3.6 - 15 */ background: linear-gradient(90deg, #F2BFA2,#FAE5DA, #fff,#FAE5DA,#F2BFA2); /* 标准的语法（必须放在最后） */ background: #EAE9E9;}
+#New_House .New_HouselunboTab .New_Houselunbo2{/* position: absolute; top: 140px; */width: 1200px; height: 600px; /* left: 0; right: 0; margin: auto; */ overflow: hidden;  margin: 0 auto; }
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content{width: 1200px;overflow: hidden;}
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content2{width: 345px;float: right; }
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content>div{width: 345px; height: 120px; float: left;   background: #fff; margin-bottom: 30px; cursor: pointer;  -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content>div h3{width: 74%; font-size: 28px; margin: 10px auto; overflow: hidden;}
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content>div h3 span:nth-child(1){width: 40px; height: 40px; line-height: 40px; text-align: center; font-size: 28px; border-radius: 50%; border:#333 solid 1px; display: block;float: left; color: #333;}
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content>div h3 span:nth-child(2){float: right; display: block; width: 210px; height: 40px; line-height: 40px; text-align: center; color: #333;}
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content>div p{width: 88%; font-size:16px; margin: 0 auto; color: #333;}
+#New_House .New_HouselunboTab .New_Houselunbo2 .New_content>div:nth-of-type(even){ margin-left: 510px;}
+#New_House .New_HouselunboTab ul{position: absolute;top: -8px;bottom: 0;left: 0;right: 0;margin: auto;width: 450px;height: 570px;}
+#New_House .New_HouselunboTab ul li{display: none;}
+#New_House .New_HouselunboTab ul li:nth-child(1){display: block;}
+#New_House .blockes{display: block!important;}
+#New_House .blockes2{background: #263344!important; }
+#New_House .blockes3{color: #fff!important; }
+#New_House .blockes4{border: 1px #fff solid!important;}
+
+
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：老房套餐页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#Old_House{width:100%; max-width: 1920px; margin: 0 auto;}
+#Old_House .Old_Houselunbo{ margin: 0 auto;height: 800px; }
+#Old_House .Old_Houselunbo .Old_Housefist{margin: 0 auto;overflow: hidden;width: 100%;height: 780px;}
+/* 第一个轮播图 */
+#Old_House .banner{position:relative;width:100%;height:700px;}
+#Old_House .banner .b_main{position:relative;width:100%;height:700px; top: 20px;}
+#Old_House  .banner .b_main .b_m_pic{position:relative;width:100;height:700px}
+#Old_House  .b_main .b_m_pic li{position:absolute;width:100%;height:700px;top:0;left:0; }
+#Old_House  .b_list{width: 1200px; height: 82px; margin: 0 auto;}
+#Old_House .b_list ul{width: 1200px; margin: 0 auto;}
+#Old_House .b_list ul li{width:240px; height:70px;float:left; cursor: pointer;text-align: center;font-size: 24px;line-height: 70px;color: #000;position: relative;border-bottom: 6px #dcdcdc solid;}
+#Old_House  .b_list ul li>span{position: absolute;bottom: 0px; left: 0; right: 0; margin: auto; width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-bottom: 20px solid #263344; display: none;}
+#Old_House  .b_list ul .l_hover, #Old_House .b_list ul .l_click{ border-bottom: 6px solid #266761; }
+#Old_House .l_click2{display: block!important;}
+#Old_House .b_btn div{position:absolute;width:100px;height:100px;background:rgba(0,0,0,0.7); font-size:60px;color:white;text-align:center;line-height:100px;top:50%;margin-top:-80px;cursor:pointer;}
+#Old_House .b_btn .b_left{left:0;border-radius:50%}.b_btn .b_right{right:0;border-radius:50%}
+/* 第二个选项卡切换 */
+#Old_House .Old_HouselunboTab{height: 700px; padding-top: 120px; position: relative; background: -webkit-linear-gradient(90deg, #E3E3E3,#ECECEC, #fff,#ECECEC,#E3E3E3); /* Safari 5.1 - 6.0 */ background: -o-linear-gradient(90deg, #E3E3E3,#ECECEC, #fff,#ECECEC,#E3E3E3); /* Opera 11.1 - 12.0 */ background: -moz-linear-gradient(90deg, #E3E3E3,#ECECEC, #fff,#ECECEC,#E3E3E3); /* Firefox 3.6 - 15 */ background: linear-gradient(90deg, #E3E3E3,#ECECEC, #fff,#ECECEC,#E3E3E3); /* 标准的语法（必须放在最后） */}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2{/* position: absolute; top: 140px; */width: 1200px; height: 600px; /* left: 0; right: 0; margin: auto; */ overflow: hidden;  margin: 0 auto; }
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content{width: 1200px;overflow: hidden;}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content2{width: 345px;float: right; }
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content>div{width: 345px; height: 120px; float: left;   background: #fff; margin-bottom: 30px; cursor: pointer;  -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content>div h3{width: 74%; font-size: 28px; margin: 10px auto; overflow: hidden;}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content>div h3 span:nth-child(1){width: 40px; height: 40px; line-height: 40px; text-align: center; font-size: 28px; border-radius: 50%; border:#333 solid 1px; display: block;float: left; color: #333;}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content>div h3 span:nth-child(2){float: right; display: block; width: 210px; height: 40px; line-height: 40px; text-align: center; color: #333;}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content>div p{width: 88%; font-size:16px; margin: 0 auto; color: #333;}
+#Old_House .Old_HouselunboTab .Old_Houselunbo2 .New_content>div:nth-of-type(even){ margin-left: 510px;}
+#Old_House .Old_HouselunboTab ul{position: absolute;top: -8px;bottom: 0;left: 0;right: 0;margin: auto;width: 450px;height: 570px; }
+#Old_House .Old_HouselunboTab ul li{display: none;}
+#Old_House .Old_HouselunboTab ul li:nth-child(1){display: block;}
+#Old_House .blockes{display: block!important;}
+#Old_House .blockes2{background: #263344!important; }
+#Old_House .blockes3{color: #fff!important; }
+#Old_House .blockes4{border: 1px #fff solid!important;}
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：装修攻略页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#Decora_strategy {width:100%; max-width: 1920px; margin: 0 auto;}
+#Decora_strategy .Decora_title{width: 1200px; margin: 0 auto; }
+#Decora_strategy .Decora_title span{text-align:left; font-size: 14px; color: #666; letter-spacing: 1px; line-height: 30px;}
+#Decora_strategy section{overflow: hidden; width: 1200px; margin: 0 auto;}
+#Decora_strategy section .Decora_lunbo{width: 820px; float: left; height: 460px; }
+#Decora_strategy section .Decora_signUp{width: 333px;height: 380px;float: right;margin0right: 20px;margin-right: 30px;margin-top: 11px;height: 436px;box-shadow: 0 0 16px #333;}
+#Decora_strategy section .swiper-container{width:100%;height:100%}
+#Decora_strategy section .swiper-slide{text-align:center;font-size:18px;background:#fff;display:-webkit-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-webkit-align-items:center;align-items:center}
+#Decora_strategy .Decora_stratcont{width: 1200px; margin: 40px auto 0; }
+/* 选项卡切换 */
+#Decora_strategy .Decora_strattabes,  .Decora_strattabes2 {width: 1200px; margin: 40px auto 0; height: 370px; }
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle ,  .Decora_strattabes2 .Decora_strTabTitle{overflow: hidden; padding-bottom: 20px; border-bottom: 2px #084F2B solid; margin-bottom: 20px; font-size: 24px;}
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle .DecoraLeft,  .Decora_strattabes2 .Decora_strTabTitle .DecoraLeft{float: left; width: 160px; padding-left: 12px; border-left: 10px #084F2B solid;}
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle .DecoraRight , .Decora_strattabes2 .Decora_strTabTitle .DecoraRight{float: right;width: 1005px;overflow: hidden;}
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle .DecoraRight>li , .Decora_strattabes2 .Decora_strTabTitle .DecoraRight>li{float: left; font-size: 16px; width: 90px; background: #F6F6F6; height: 30px; line-height: 30px;  margin-right: 8px; text-align: center; color: #666; cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; -ms-transition: all .5s; -o-transition: all .5s; transition: all .5s; }
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle .DecoraRight>li>a ,#Decora_strategy .Decora_strattabes2 .Decora_strTabTitle .DecoraRight>li>a{color: #666;}
+#Decora_strategy .Decora_strattabes .Decora_strTabContent , .Decora_strattabes2 .Decora_strTabContent{position: relative;}
+#Decora_strategy .Decora_strattabes .Decora_strTabContent>div, .Decora_strattabes2 .Decora_strTabContent>div{position: absolute; top: 0; display: none; height: 300px;}
+#Decora_strategy .Decora_strattabes .Decora_strTabContent>div:nth-child(1), .Decora_strattabes2 .Decora_strTabContent>div:nth-child(1){display: block;}
+.Decora, .Decora2{background: #17804B!important; color: #fff!important;}
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle .DecoraRight>li:hover , .Decora_strattabes2 .Decora_strTabTitle .DecoraRight>li:hover,#Decora_strategy .Decora_chakan:hover{background: #17804B; color: #fff;}
+#Decora_strategy .Decora_strattabes .Decora_strTabTitle{position: relative;}
+#Decora_strategy .Decora_chakan{position: absolute; top: 0; right: 0; font-size: 16px; width: 90px; height: 30px; line-height: 30px;  margin-right: 8px; text-align: center; color: #666; cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; -ms-transition: all .5s; -o-transition: all .5s; transition: all .5s;border: 1px #eee solid; }
+#Decora_strategy .shabi{position: relative;}
+#Decora_strategy .Decora_chakan2{position: absolute; top: 0; right: 0; font-size: 16px; width: 90px; height: 30px; line-height: 30px;  margin-right: 8px; text-align: center; color: #666; cursor: pointer; -webkit-transition: all .5s; -moz-transition: all .5s; -ms-transition: all .5s; -o-transition: all .5s; transition: all .5s;border: 1px #eee solid; }
+/* 选项卡切换 结束*/
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：关于今朝页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#About_Present {width:100%; max-width: 1920px;margin: 0px auto 0; background: #F6F6F6;  overflow: hidden;}
+#About_Present .About_title{width: 1200px; margin: 0 auto; }
+#About_Present .About_title span{text-align:left; font-size: 14px; color: #666; letter-spacing: 1px; line-height: 30px;}
+#About_Present .setion {width: 1200px;  margin: 0 auto;   overflow: hidden;}
+#About_Present .setion .About_Left{float: left; width: 240px; background: #FFF; text-align: center; padding: 20px 0;}
+#About_Present .setion .About_Left li{height: 55px; line-height: 55px; font-size: 18px; color: #333; border-left: 2px #F2F6F4 solid; cursor: pointer;}
+#About_Present .setion .About_Right{float: left; overflow: hidden; width: 930px; margin-left: 20px; position: relative;}
+#About_Present .About_Right > div{ width: 930px; margin: 0 auto;   display: none;}
+#About_Present .About_Right > div:nth-child(1){display: block;}
+.Decoraabout{ background: #F2F6F4; border-left: 2px #084F2B solid!important; color: #46996F!important;}
+.Decoraabout2{ display: block;}
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：装修保障一线主材 页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#YixianZc {width:100%; max-width: 1920px;margin: 20px auto 0; background: #F6F6F6;  height: 100%;}
+#YixianZc .YixianCont{ background: url(../img/yixian/yixian_03.jpg) no-repeat center top;  background-size: 100%; padding-top: 220px;  padding-bottom: 90px; background-size:cover; background-position:center; }
+#YixianZc .yixianConyent{width: 1200px;margin: 0px auto;/* border: 1px #f00 solid; */}
+/* 选项卡切换 */
+#YixianZc .New_HouselunboTab{/* height: 700px; */position: relative;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2{/* position: absolute; top: 140px; */width: 1200px; height: 600px; /* left: 0; right: 0; margin: auto; */ overflow: hidden;  margin: 0 auto; }
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content{width: 1200px;overflow: hidden;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content2{width: 345px;float: right; }
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content>div{width: 345px; height: 120px; float: left;   background: #fff; margin-bottom: 30px; cursor: pointer;  -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .3s;-o-transition: all .3s;transition: all .3s;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content>div h3{width: 74%; font-size: 28px; margin: 10px auto; overflow: hidden;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content>div h3 span:nth-child(1){width: 40px; height: 40px; line-height: 40px; text-align: center; font-size: 28px; border-radius: 50%; border:#333 solid 1px; display: block;float: left; color: #333;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content>div h3 span:nth-child(2){float: right; display: block; width: 210px; height: 40px; line-height: 40px; text-align: center; color: #333;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content>div p{width: 88%; font-size:16px; margin: 0 auto; color: #333;}
+#YixianZc .New_HouselunboTab .New_Houselunbo2 .New_content>div:nth-of-type(even){ margin-left: 510px;}
+#YixianZc .New_HouselunboTab ul{position: absolute;top: -26px;bottom: 0;left: 0;right: 0;margin: auto;width: 450px;height: 570px;}
+#YixianZc .New_HouselunboTab ul li{display: none;}
+#YixianZc .New_HouselunboTab ul li:nth-child(1){display: block;}
+#YixianZc .blockes{display: block!important;}
+#YixianZc .blockes2{background: #263344!important; }
+#YixianZc .blockes3{color: #fff!important; }
+#YixianZc .blockes4{border: 1px #fff solid!important;}
+
+
+/**
+ * ============================================================================
+ * 产品页面：验收工作页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#Check_Beforea {width:100%; max-width: 1920px;margin: 0px auto 0; background: #F6F6F6;}
+#Check_Beforea .Check_Befcont{ background: url(../img/yanshou/beijing.jpg); width: 100%; height: 600px;} ul li{}
+#Check_Beforea .Check_Befcont ul{overflow: hidden; zoom: 1; padding-bottom: 22px; border-bottom: 4px solid #084F2B; width: 1200px; margin: 0 auto;}
+#Check_Beforea .Check_Befcont ul li{ width: 218px; height: 55px; border: #5AA27E solid 1px; line-height: 55px; color: #17804B; text-align: center; float: left; margin-right: 25px; background: #fff; cursor: pointer; font-size: 26px;}
+#Check_Beforea .Check_Befcont ul li:last-child{margin-right: 0;}
+#Check_Beforea .Check_Befcont .Check_Befbottom{width: 1200px; margin: 0 auto; position: relative;}
+#Check_Beforea .Check_Befcont .Check_Befbottom>div{position: absolute; top: 0; display: none;}
+#Check_Beforea .Check_Befcont .blackCheck{display: block!important;}
+#Check_Beforea .Check_Befcont .blackCheck2{background: #FDCC00!important; font-weight: bold; color: #000; border: #FDCC00 solid 1px;}
+#Check_Beforea .backchecked{background: #FDCC00!important; -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s; color: #000; border: none!important; font-weight: bold; border: #FDCC00 solid 1px!important; color: #000!important;}
+#Check_Beforea .Check_Befcont ul li{position: relative;}
+#Check_Beforea .Check_Befcontsanjioa{	position: absolute; bottom: -20px;  right: 10px;  width: 0; height: 0; border-left: 17px solid transparent; border-right: 17px solid transparent; border-top: 20px solid #FED941;  display: none; -webkit-transition: all .5s;-moz-transition: all .3s;-ms-transition: all .5s;-o-transition: all .5s;transition: all .5s; }
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：老房博物馆 页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#old_museum {width:100%; max-width: 1920px;margin: 0px auto 0; background: #F6F6F6; }
+#old_museum #old_museum{position: relative;}
+#old_museum .old_muslunbo{position: relative; background: url(../img/oldmuseum/Old_Museum_02.jpg)no-repeat;  background-size:cover; background-position:center;  height: 700px;}
+#old_museum .old_muslunbo .old_muslunbo2{position: absolute;bottom: 79px;left: 340px;right: 0px;/* margin: auto; */width: 855px; height: 190px; }
+#old_museum  .swiper-container { width: 100%;	height: 100%;}
+#old_museum .swiper-slide {
+	/* border: 2px solid hsla(0,0%,90%,.5);
+    background-clip: padding-box; */
+	text-align: center;
+	font-size: 18px;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+#old_museum .swiper-slide img{object-fit: cover;}
+#old_museum .swiper-button-next{top: 69px;right: -33px;outline: none;width: 20px;}
+#old_museum .swiper-button-prev{/* border: 1px #f00 solid; */right: -32px;left: unset;top: 115px;outline: none;width: 20px;}
+#old_museum .swiper-button-next.swiper-button-white{background-size: 100%;}
+#old_museum .swiper-button-prev.swiper-button-white{background-size: 100%;}
+/* 媒体查询 */
+@media screen and (min-width: 1920px) {
+#old_museum .old_muslunbo .old_muslunbo2{position: absolute;bottom: 79px;left: 584px;right: 0px;/* margin: auto; */width: 970px; height: 180px;}
+.Yingmai-fist .slider .hd{position: absolute;  width: 35px; right: 22%; z-index: 1;  top: 15%; text-align: center;}
+}
+
+
+/**
+ * ============================================================================
+ * 产品页面：装修保障社区服务页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#ShequFuwu {width:100%; max-width: 1920px;margin: 0px auto 0; background: #F6F6F6; }
+
+
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：文章列表页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#List_art {width:100%; max-width: 1920px;margin: 0px auto 0;}
+
+
+
+/**
+ * ============================================================================
+ * 产品页面：文章最终页面样式表开始！！！！！！！
+ * ============================================================================
+ * Author: 今朝装饰设计有限公司
+ * Date: 2019年07月
+*/
+#List_Final{width:100%; max-width: 1920px;margin: 0px auto 0;}

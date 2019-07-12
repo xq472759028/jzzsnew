@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>1+n局装</title>
+		<link rel="stylesheet" href="css/jzindex.css">
+		<link href="https://cdn.bootcss.com/Swiper/4.4.1/css/swiper.min.css" rel="stylesheet"> <!-- Swiper css -->
+		<link rel="stylesheet" href="css/public.css">
+		<link rel="stylesheet" href="iconfont/iconfont.css">
+
+	</head>
+	<body>
+		<script src="js/header.js"></script>
+		<div id="Local-1N">
+			<div>
+				<img src="20190628/img/local/Partial-decoration_02.jpg" width="100%" title="" alert="" />
+			</div>
+			<!-- 第一个轮播图 -->
+			<div class="Local-1Nlunbo">
+				<ul>
+					<li class="Local-disblsck">厨房翻新</li>
+					<li>卫生间翻新</li>
+					<li>地面翻新</li>
+					<li>墙面翻新</li>
+				</ul>
+				<div class="Local-1Ncontent">
+					<div>
+						<img src="20190628/img/local/bannerlocal.jpg" width="100%" alt="" title="" />
+					</div>
+					<div>
+						<img src="20190628/img/local/Partial-banner1.jpg" width="100%" alt="" title="" />
+					</div>
+					<div>
+						<img src="20190628/img/local/bannerlocal.jpg" width="100%" alt="" title="" />
+					</div>
+					<div>
+						<img src="20190628/img/local/Partial-banner1.jpg" width="100%" alt="" title="" />
+					</div>
+				</div>
+			</div>
+			<div>
+				<img src="20190628/img/local/Partial-decoration_04.jpg" width="100%" title="" alert="" />
+			</div>
+			<!-- 第二个轮播开始 -->
+			<div class="Local-1Nlunbo2">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer3.jpg" width="100%" alt="" title="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer4.jpg" width="100%" alt="" title="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer3.jpg" width="100%" alt="" title="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer4.jpg" width="100%" alt="" title="" />
+						</div>
+					</div>
+					<!-- 分页 -->
+					<!-- <div class="swiper-pagination"></div> -->
+				</div>
+				<!-- 左右箭头 -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!-- 第二个轮播结束 -->
+			<div>
+				<img src="20190628/img/local/Partial-decoration_06.jpg" width="100%" title="" alert="" />
+			</div>
+			<!-- 第三个轮播开始 -->
+			<div class="Local-1Nlunbo3">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer3.jpg" width="100%" alt="" title="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer4.jpg" width="100%" alt="" title="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer3.jpg" width="100%" alt="" title="" />
+						</div>
+						<div class="swiper-slide">
+							<img src="20190628/img/local/Parti-bannmer4.jpg" width="100%" alt="" title="" />
+						</div>
+					</div>
+					<!-- 分页 -->
+					<!-- <div class="swiper-pagination"></div> -->
+				</div>
+				<!-- 左右箭头 -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+			</div>
+			<!-- 第三个轮播结束 -->
+			<div>
+				<img src="20190628/img/local/Partial-decoration_08.jpg" width="100%" title="" alert="" />
+			</div>
+		</div>
+		<script src="js/footer.js"></script>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+	<script src="https://cdn.bootcss.com/Swiper/4.4.1/js/swiper.min.js"></script>
+	<script src="js/public.js"></script>
+
+	<script>
+		// 第一个焦点轮播图
+		var galleryThumbs = new Swiper('.Local-1Nlunbo .gallery-thumbs', {
+			spaceBetween: 10,
+			slidesPerView: 4,
+			freeMode: true,
+			watchSlidesVisibility: true,
+			watchSlidesProgress: true,
+		});
+		var galleryTop = new Swiper('.Local-1Nlunbo .gallery-top', {
+			loop: true,
+			autoplay: {
+				delay: 3500,
+				stopOnLastSlide: false,
+				disableOnInteraction: true,
+			},
+			spaceBetween: 10,
+			navigation: {
+				nextEl: '.Local-1Nlunbo .swiper-button-next',
+				prevEl: '.Local-1Nlunbo .swiper-button-prev',
+			},
+			thumbs: {
+				swiper: galleryThumbs
+			}
+		});
+		// 第二个轮播图 小改动变为大生活
+		var Swiper2 = new Swiper('.Local-1Nlunbo2 .swiper-container', {
+			loop: true,
+			effect: 'fade', //切换效果
+			// spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.Local-1Nlunbo2 .swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.Local-1Nlunbo2 .swiper-button-next',
+				prevEl: '.Local-1Nlunbo2 .swiper-button-prev',
+			},
+		});
+		// 第3个轮播图 小改动变为大生活
+		var Swiper3 = new Swiper('.Local-1Nlunbo3 .swiper-container', {
+			loop: true,
+			// effect: 'fade', //切换效果
+			// spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false,
+			},
+			pagination: {
+				el: '.Local-1Nlunbo3 .swiper-pagination',
+				clickable: true,
+			},
+			navigation: {
+				nextEl: '.Local-1Nlunbo3 .swiper-button-next',
+				prevEl: '.Local-1Nlunbo3 .swiper-button-prev',
+			},
+		});
+		// 第一个轮播图切换
+		$(function(){
+			$("#Local-1N .Local-1Nlunbo>ul li").mouseover(function(){
+				const LocalIndex = $(this).index();
+				$(this).addClass("Local-disblsck").siblings().removeClass()
+				$("#Local-1N .Local-1Nlunbo .Local-1Ncontent>div").eq(LocalIndex).css("display","block").siblings().css("display","none");
+			})
+		})
+	</script>
+</html>

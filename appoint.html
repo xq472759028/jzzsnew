@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>预约设计师</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <link rel="stylesheet" href="css/jzindex.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <!--头部开始-->
+    <script src="js/header.js"></script>
+    <!--头部结束-->
+    <div class="home" style="width: 100%"><img src="image/appoint/ap1.jpg" alt=""></div>
+    <div class="home"><img src="image/appoint/ap2.jpg" alt=""></div>
+    <div class="home"><img src="image/appoint/ap_05.jpg" alt=""></div>
+    <div class="home"><img src="image/appoint/ap_07.jpg" alt=""></div>
+    <div class="home"><img src="image/appoint/ap_08.jpg" alt=""></div>
+    <div class="home"><img src="image/appoint/ap_10.png" alt=""></div>
+    <div class="home"><img src="image/appoint/ap_11.jpg" alt=""></div>
+    <!--尾部开始-->
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
+<script>
+    //        热门城市
+    $('.qzlead-area').hover(function () {
+        $(this).addClass('qzlead-area-active');
+        $(".qzlead-town").show();
+        $(".qzlead-town").hover(function () {
+            $(this).show();
+        })
+    }, function () {
+        $(this).removeClass('qzlead-area-active');
+        $(".qzlead-town").hide()
+    });
+    //    联系方式效果
+    $('.qzlead-idea-hover').hover(function () {
+        $(".qzlead-contact").slideDown();
+        $(".qzlead-contact").hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).slideUp();
+        })
+    }, function () {
+        $(".qzlead-contact").hide()
+    });
+    // 头部效果开始
+    $(".qzlead-list-li").mouseenter(function () {
+        if ($(this).find('.qzlead-effect')) {
+            $(this).find('.qzlead-effect').slideDown(200);
+            $(this).find('.icon-img').attr("class", "icon-img");
+            $(this).find('.icon-img').attr("class", "icon-img-top");
+            $(this).find('.qzlead-list-span').css("color", "green");
+            $('.qzlead-effect').hover(function () {
+                $(this).slideDown(200);
+            })
+        } else {
+            $(this).find('.qzlead-effect').slideUp(200);
+            $(this).find('.icon-img-top').attr("class", "icon-img-top");
+            $(this).find('.icon-img-top').attr("class", "icon-img");
+            $(this).find('.qzlead-list-span').css("color", "#333");
+        }
+    });
+    $(".qzlead-list-li").mouseleave(function () {
+        $(this).find('.qzlead-effect').slideUp(200);
+        $(this).find('.icon-img-top').attr("class", "icon-img-top");
+        $(this).find('.icon-img-top').attr("class", "icon-img");
+        $(this).find('.qzlead-list-span').css("color", "#333");
+    });
+
+
+    $(document).ready(function () {
+        $(".qzlead-list-li>a").each(function () {
+            $this = $(this);
+            if ($this[0].href == String(window.location)) {
+                $this.find('.qzlead-list-span').addClass('qzlead-list-a');
+                $this.find('.icon-img-top').css("opacity", 0);
+                $this.parent().siblings().find('.qzlead-list-span').removeClass('qzlead-list-a');
+                $this.siblings().find('.icon-img').css("opacity", 1);
+            }
+        });
+
+    });
+    $(".qzlead-list-li").on("click", function () {
+        $(this).children().first().find('span').addClass('qzlead-list-a');
+        $(this).children().first().find('.icon-img-top').css("opacity", 0);
+        $(this).siblings().find('span').removeClass('qzlead-list-a');
+        $(this).siblings().find('.icon-img').css("opacity", 1);
+    });
+    $(".qzlead-list-li").find('.qzlead-effect').children().on("click", function () {
+        $(this).children().first().find('.icon-first').removeClass('icon-sanjiaoxing');
+        $(this).siblings().find('.icon-first').addClass('icon-sanjiaoxing');
+    });
+    //头部效果结束
+
+    // 搜索框点击事件
+    $('.qzlead-search-next').on('click', function () {
+
+        $('.qzlead-list').css('display', 'none');
+        $('.qzlead-search').css('display', 'block')
+        $('.qzlead-search-next').css('display', 'none')
+    })
+    $(document).mouseup(function (e) {
+        var _con = $('.qzlead-search');
+        if (!_con.is(e.target) && _con.has(e.target).length === 0) {
+            $('.qzlead-list').css('display', 'block');
+            $('.qzlead-search').css('display', 'none')
+            $('.qzlead-search-next').css('display', 'block')
+        }
+    });
+</script>

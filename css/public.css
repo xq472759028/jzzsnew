@@ -1,0 +1,130 @@
+@import "bases.css";
+
+.iconfont {
+    font-family: "iconfont" !important;
+    /*font-size:16px;*/
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*头部开始*/
+/*<!--头部城市切换、意见反馈、咨询热线-->*/
+.qzlead-top {width: 100%;height: 37px;background: #ebebeb;position: fixed;top: 0;left: 0;z-index: 200;}
+.qzlead-top-center {width: 1200px; height: 100%; margin: 0 auto;}
+.qzlead-area { width: auto; min-width: 95px; height: 100%; float: left; font-size: 14px; cursor: pointer; border: 1px solid #fff; position: relative;box-sizing: border-box}
+.qzlead-area-active { box-sizing: border-box; border: 1px solid #d8d8d8; border-bottom: none;}
+.qzlead-area > i {display: inline-block;width: 20px;height: 100%;font-size: 16px;margin-top: 10px;text-align: center;color: #0cb46a;float: left;}
+.qzlead-area > p {color: #333;float: left;line-height: 37px;}
+.qzlead-area > span {color: #0cb46a;line-height: 37px}
+
+/*定位所有的城市开始*/
+.qzlead-town {position: absolute;left: -1px;top: 37px;width: 410px;height: auto;z-index: 30;background: #fff;display: none;}
+.qzlead-town-title {padding: 0px 30px;height: 40px;border: 1px #d8d8d8 solid;border-bottom: none;}
+.qzlead-town-title > li {margin-right: 10px;color: #333;padding: 0px 3px;font-size: 12px;float: left;cursor: pointer;line-height: 37px;}
+.qzlead-line {color: #0cb46a !important;border-bottom: 2px solid #0cb46a;}
+.qzlead-town-title > li:last-child {margin-right: 0px;}
+.qzlead-town-list {width: 100%;height: auto;position: relative;}
+.qzlead-town-item {position: absolute;left: 0px;top: 0px;width: 410px;height: auto;background: #fff;border: 1px #d8d8d8 solid;padding: 10px 0px;}
+.qzlead-hot {padding: 0px 30px;}
+.qzlead-hot > li {float: left;width: 62px;overflow: hidden;text-align: left;height: 28px;line-height: 28px;font-size: 12px;}
+.qzlead-hot > li > a {color: #666;}
+.qzlead-hot > li > a:hover {color: #0cb46a;}
+/*定位所有的城市结束*/
+
+
+.qzlead-top-right {float: right;min-width: 240px;height: 100%;position: relative;}
+.qzlead-idea {display: block;float:left;height: 14px;margin-top: 11px;font-size: 14px;padding: 0px 14px;color: #999;line-height: 14px;border-right: 1px solid #999;}
+.qzlead-idea:hover {color: #0cb46a;}
+.qzlead-top-right > p {float: right;height: 100%;color: #084f2b;font-size: 14px;margin-left: 10px;cursor: pointer;}
+.qzlead-top-right > p > i {margin-top: 9px;font-size: 12px;}
+.qzlead-top-right > p > span {line-height: 35px;}
+
+/*联系巧装家弹出框*/
+.qzlead-contact {position: absolute;top: 35px;right: -10px;width: 245px;height: 210px;padding: 15px 20px;color: #555;background-color: #fff;box-shadow: 0px 0px 8px #ccc;display: none;z-index: 50;}
+.qzlead-contact > p {width: 100%;color: #999;text-align: center;font-size: 20px;}
+.qzlead-contact > input {margin-top: 10px;border-radius: 5px;border: 1px rgb(221, 221, 221) solid;width: 100%;height: 20%;padding-left: 10px;font-size: 16px}
+.qzlead-contact > button {color: #fff;width: 100%;height: 20%;border-radius: 10px;background-color: #05B56A;margin-top: 12px;margin-bottom: 10px}
+.qzlead-contact > span {display: inline;width: 100%;font-size: 12px;color: #999;text-align: center;}
+
+/*<!--logo、首页、搜索-->*/
+.qzlead-bottom {position: fixed;top: 37px;left: 0;z-index: 200;width: 100%;height: 92px;background: #fff;-webkit-box-shadow: 0 10px 15px rgba(0,0,0,0.1);-moz-box-shadow: 0 10px 15px rgba(0,0,0,0.1);box-shadow: 0 10px 15px rgba(0,0,0,.1);}
+.qzlead-bottom-fixed{top: 0;transition: all 0.7s;z-index: 200;}
+.qzlead-top-fixed{top: -37px;transition: all 0.7s;z-index: 200;}
+.qzlead-bottom-center {width: 1200px;height: 100%;margin: 0 auto;}
+.qzlead-logo {width: 245px;height: auto;margin-top: 24px;float: left;}
+.qzlead-logo img {display: block;width: 100%;height: 100%;}
+.qzlead-list {height: 100%;margin-left: 40px;float: left;}
+.qzlead-list-li {float: left;height: 80px;line-height: 20px;padding: 0px 16px;box-sizing: border-box;}
+
+.qzlead-list-li > a {display: block;width: 100%;height: 20px;margin-top: 30px;font-size: 16px;vertical-align: middle;text-align: center;padding-bottom: 20px}
+.qzlead-list-li:hover .qzlead-list-li > a{border-bottom:2px solid #084f2b}
+.qzlead-list > li:last-child {margin-right: 0px;}
+.qzlead-list-li > a > span {float: left;height: 100%;color:#333;}
+.qzlead-list-hot{width: 26px;height: 16px;top: 13px;right: -7px;background: red;display: block}
+.qzlead-list-color{color: #084f2b!important}
+.icon-img {display: block;float: left;width: 7px;height: 4px;margin-top: 8px;background: url("../image/icon-img_03.png") no-repeat center;background-size: cover;}
+.icon-img-top {display: block;float: left;width: 7px;height: 4px;margin-top: 8px;background: url("../image/icon-img_05.png") no-repeat center;background-size: cover;}
+.qzlead-search-next{float: right; margin-top: 23px; width: 30px; height: 43px; border: none;font-size: 24px;line-height: 43px;text-align: center;margin-right: 45px;cursor: pointer;}
+.qzlead-search-next>i{font-size: 24px}
+.qzlead-search > i {display: block;width: 30px;height: 100%;font-size: 20px;color: #05B56A;float: left;margin-top: 5px;cursor: pointer;text-align: center}
+.qzlead-search {width: 500px; border:1px solid #e5e5e5;position:absolute; margin:auto;left: 0;right:0; top:26px;display: none;}
+.qzlead-jzold{float: right;width: 135px;height: auto;margin-top: 25px}
+.qzlead-jzold img{display: block;width: 100%}
+.qzlead-search > input {display: block;width:260px;padding-left: 10px;height: 43px;float: left;font-size: 14px}
+.qzlead-search-last{width: 125px;height: 43px;background:#084F2B;float: right;cursor: pointer}
+.qzlead-search-last> i {display: block;width: 55px;height: 43px;font-size: 16px;color: #05B56A;float: left;line-height: 43px;cursor: pointer;text-align: center;color: #fff}
+.qzlead-search span{width: 70px;display: block;float:right;line-height: 43px;font-size: 16px;color: #fff;text-align: left}
+.qzlead-search select{width:80px;padding-left: 18px;padding-right: 6px;margin-right: -6px;font-size: 12px;height: 43px;float: left;display: block;font-size: 14px}
+.bnbn{display: none;transition: 0.6s}
+/*移入速表出现的样式*/
+.qzlead-result {
+    position: absolute;
+    left: 0;
+    top: 80px;
+    width: 100%;
+    height: 112px;
+    background: #f6f6f6;
+    border-top: 1px solid #c4c4c4;
+    z-index: 200;
+    display: none;
+    -webkit-box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 15px rgba(0,0,0,.1);
+}
+.qzlead-effect {margin: 0 auto; height:100%;padding-top: 0px;z-index: 200;}
+.qzlead-effect>li{height: 57px;margin-right: 58px;margin-top: 27px;color: #333333;text-align: center;float: left;}
+.qzlead-effect>li:first-child{margin-left: 33px}
+.qzlead-effect>li:last-child{margin-right: 0}
+.qzlead-effect-img{width: auto;height: 34px;margin: 0 auto}
+.qzlead-effect-img>img{width:auto;height: 100%;margin: 0 auto}
+.qzlead-effect-on{display: block}
+.qzlead-effect-off{display: none}
+.qzlead-effect>li>a>p{font-size: 14px;margin-top: 7px;color: #333333}
+
+/*头部结束*/
+
+
+/*报价框结束*/
+/*尾部开始*/
+.qzfoot {width: 100%;height: auto;margin-top: 40px;padding-bottom:12px;background: #1f1f1f;overflow: hidden;}
+.qzfoot-center {width: 1200px;height: 100%;margin: 0 auto;position: relative;overflow: hidden;}
+.qzfoot-list {padding: 44px 0px;float: left;margin-right: 110px}
+.qzfoot-list > li {float: left;margin-right: 35px;font-size: 16px;}
+.qzfoot-list > li > a {color: #fff;}
+.qzfoot-list-con{margin-top: 20px}
+.qzfoot-list-con>li{height: 16px;margin-bottom: 8px;line-height: 16px;font-size: 14px}
+.qzfoot-list-con>li>a{color: #fff}
+.qzfoot-info{float: left;margin-top: 80px}
+.qzfoot-info p{margin-bottom: 8px}
+.qzfoot-info p span{font-size: 14px;margin-right: 35px;color: #fff}
+.qzfoot-wechart{float: right;margin-top: 44px}
+.qzfoot-wechart p{margin-right: 30px;float: left}
+.qzfoot-wechart p:last-child{margin-right: 0}
+.qzfoot-wechart p img{display: block;width: 120px;height: 120px}
+.qzfoot-wechart p span{width: 120px;text-align: center;line-height: 44px;color: #fff;font-size: 16px;display: block}
+.qzfoot-word {width:1200px;margin:0 auto;font-size: 14px;text-align: left;color: #fff;margin-bottom: 12px;overflow: hidden;}
+.qzfoot-word img{display: block;margin-right: 5px;margin-top: 1px;float: left;width: 14px}
+.qzfoot-word span{margin-right: 28px;float: left;}
+
+/*尾部结束*/

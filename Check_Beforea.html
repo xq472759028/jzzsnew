@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>3.0</title>
+	<link rel="stylesheet" href="css/jzindex.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/public.js"></script>
+</head>
+
+<body>
+	<script src="js/header.js"></script>
+	<div id="Check_Beforea">
+		<img src="20190628/img/yanshou/3.0_01.jpg" width="100%" alt="100%" />
+		<div class="Check_Befcont">
+			<ul>
+				<li class="blackCheck2">东方雨虹防水
+					<span class="Check_Befcontsanjioa blackCheck"></span>
+				</li>
+				<li>伟星PPR水管
+					<span class="Check_Befcontsanjioa"></span>
+				</li>
+				<li>华PVC线管
+					<span class="Check_Befcontsanjioa"></span>
+				</li>
+				<li>龙马白乳胶
+					<span class="Check_Befcontsanjioa"></span>
+				</li>
+				<li>今朝墙衬
+					<span class="Check_Befcontsanjioa"></span>
+				</li>
+			</ul>
+			<div class="Check_Befbottom">
+				<div class="blackCheck">
+					<img src="20190628/img/yixian/banner2.png" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/yixian/banner.png" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/yixian/banner2.png" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/yixian/banner.png" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/yixian/banner2.png" width="100%" alt="" title="" />
+				</div>
+			</div>
+		</div>
+		<img src="20190628/img/yanshou/3.0_03.jpg" width="100%" alt="" />
+	</div>
+	<script src="js/footer.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+
+<script>
+	$(function () {
+		// 第二个选项卡
+		$(".Check_Befcont ul li").on("mouseenter", function () {
+			var Check_Befindex2 = $(this).index();
+			$(".Check_Befbottom>div").eq(Check_Befindex2).show().siblings().hide();
+			$(this).addClass("backchecked").siblings().removeClass()
+			$(this).find("span").show().parents().siblings().find("span").hide().removeClass("blackCheck");
+		});
+	})
+</script>
+
+</html>

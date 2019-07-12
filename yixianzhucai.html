@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="css/jzindex.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/public.js"></script>
+</head>
+
+<body>
+	<script src="js/header.js"></script>
+	<div id="YixianZc">
+		<div>
+			<img src="20190628/img/yixian/yixian_01.jpg" width="100%" alt="" title="" />
+		</div>
+		<div>
+			<img src="20190628/img/yixian/yixian_02.jpg" width="100%" alt="" title="" />
+		</div>
+		<div class="YixianCont">
+			<div class="yixianConyent">
+				<div class="New_HouselunboTab">
+					<!-- <img src="20190628/img/newhous/new_house_04.jpg" width="100%" alt="" title="" /> -->
+					<div class="New_Houselunbo2">
+						<div class="New_content">
+							<div>
+								<h3>
+									<span>水</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>油</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>电</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>顶</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>木</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>墙</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>瓦</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+							<div>
+								<h3>
+									<span>卫</span>
+									<span>伟星 PPR 水管</span>
+								</h3>
+								<p>纵向回缩率 0.29 （国标 &lt 2)，高温高压，长时间无渗漏</p>
+							</div>
+						</div>
+					</div>
+					<!-- 内容 -->
+					<ul>
+						<li>
+							<img src="20190628/img/newhous/newbanner1.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner2.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner1.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner2.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner1.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner2.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner1.jpg" width="100%" />
+						</li>
+						<li>
+							<img src="20190628/img/newhous/newbanner2.jpg" width="100%" />
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div>
+			<img src="20190628/img/yixian/yixian_04.jpg" width="100%" alt="" title="" />
+		</div>
+	</div>
+	<script src="js/footer.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/3.3.0/jquery.min.js"></script>
+<script>
+	//        热门城市
+	$('.qzlead-area').hover(function () {
+		$(this).addClass('qzlead-area-active');
+		$(".qzlead-town").show();
+		$(".qzlead-town").hover(function () {
+			$(this).show();
+		})
+	}, function () {
+		$(this).removeClass('qzlead-area-active');
+		$(".qzlead-town").hide()
+	});
+	//    联系方式效果
+	$('.qzlead-idea-hover').hover(function () {
+		$(".qzlead-contact").slideDown();
+		$(".qzlead-contact").hover(function () {
+			$(this).show();
+		}, function () {
+			$(this).slideUp();
+		})
+	}, function () {
+		$(".qzlead-contact").hide()
+	});
+	// 头部效果开始
+	$(".qzlead-list-li").mouseenter(function () {
+		if ($(this).find('.qzlead-effect')) {
+			$(this).find('.qzlead-effect').stop(true, true).slideDown(300);
+			$(this).find('.icon-img').attr("class", "icon-img");
+			$(this).find('.icon-img').attr("class", "icon-img-top");
+			$(this).find('.qzlead-list-span').css("color", "green");
+			$('.qzlead-effect').hover(function () {
+				$(this).stop(true, true).slideDown(300);
+			})
+		} else {
+			$(this).find('.qzlead-effect').stop(true, true).slideUp(0);
+			$(this).find('.icon-img-top').attr("class", "icon-img-top");
+			$(this).find('.icon-img-top').attr("class", "icon-img");
+			$(this).find('.qzlead-list-span').css("color", "#333");
+		}
+	});
+	$(".qzlead-list-li").mouseleave(function () {
+		$(this).find('.qzlead-effect').stop(true, true).slideUp(0);
+		$(this).find('.icon-img-top').attr("class", "icon-img-top");
+		$(this).find('.icon-img-top').attr("class", "icon-img");
+		$(this).find('.qzlead-list-span').css("color", "#333");
+	});
+
+
+
+	$(".qzlead-list-li>a").each(function () {
+		$this = $(this);
+		if ($this[0].href == String(window.location)) {
+			$this.find('.qzlead-list-span').addClass('qzlead-list-a');
+
+			$this.parent().siblings().find('.qzlead-list-span').removeClass('qzlead-list-a');
+
+		}
+	});
+	$('.qzlead-effect>li>a').each(function () {
+		$this = $(this);
+		if ($this[0].href == String(window.location)) {
+			$this.parent().parent().parent().find('.qzlead-list-span').addClass('qzlead-list-a');
+			$this.parent().parent().parent().parent().siblings().find('.qzlead-list-span').removeClass('qzlead-list-a');
+
+		}
+	})
+
+	$(".qzlead-list-li").on("click", function () {
+		$(this).children().first().find('span').addClass('qzlead-list-a');
+		$(this).children().first().find('.icon-img-top').css("opacity", 0);
+		$(this).siblings().find('span').removeClass('qzlead-list-a');
+		$(this).siblings().find('.icon-img').css("opacity", 1);
+	});
+	$(".qzlead-list-li").find('.qzlead-effect').children().on("click", function () {
+		$(this).children().first().find('.icon-first').removeClass('icon-sanjiaoxing');
+		$(this).siblings().find('.icon-first').addClass('icon-sanjiaoxing');
+	});
+	//头部效果结束
+
+	// 搜索框点击事件
+	$('.qzlead-search-next').on('click', function () {
+
+		$('.qzlead-list').css('display', 'none');
+		$('.qzlead-search').css('display', 'block')
+		$('.qzlead-search-next').css('display', 'none')
+	})
+	$(document).mouseup(function (e) {
+		var _con = $('.qzlead-search');
+		if (!_con.is(e.target) && _con.has(e.target).length === 0) {
+			$('.qzlead-list').css('display', 'block');
+			$('.qzlead-search').css('display', 'none')
+			$('.qzlead-search-next').css('display', 'block')
+		}
+	});
+</script>
+<script>
+	$(function () {
+		$("#YixianZc .New_HouselunboTab .New_content>div").hover(function () {
+			$(this).addClass("blockes2").siblings().removeClass();
+			$(this).find("h3").find("span").addClass("blockes3").prev().parent().parent().siblings().children().children().removeClass();
+			$(this).find("h3").find("span").addClass("blockes3").prev().parent().parent().siblings().children().removeClass()
+			$(this).find("h3").find("span:nth-child(1)").addClass("blockes4")
+			$(this).find("h3").next().addClass("blockes3");
+			const new_index = $(this).index()
+			$("#YixianZc .New_HouselunboTab ul li").eq(new_index).show().siblings().hide();
+		});
+	})
+</script>
+
+</html>

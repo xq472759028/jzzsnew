@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>799</title>
+	<link rel="stylesheet" href="css/jzindex.css">
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/public.js"></script>
+</head>
+
+<body>
+	<script src="js/header.js"></script>
+	<div id="New-799">
+		<div>
+			<img src="20190628/img/799/799_02.jpg" width="100%" alt="" title="" />
+		</div>
+		<div>
+			<img src="20190628/img/799/799_03.jpg" width="100%" alt="" title="" />
+		</div>
+		<!-- 第一个选项卡 -->
+		<div class="New-housebanner">
+			<div class="Yingmai-Tabqiehuan">
+				<ul>
+					<li class="blackyingmai3">客厅
+						<span class="Yingmai-triangle disblayyingm" style="display: block;"></span>
+					</li>
+					<li>餐厅
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>主卧
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>次卧
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>厨房
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>卫生间
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>阳台
+						<span class="Yingmai-triangle"></span>
+					</li>
+				</ul>
+
+			</div>
+			<div class="contnt">
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/oldbanner2.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/oldbanner2.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<img src="20190628/img/799/799_05.jpg" width="100%" alt="" title="" />
+		</div>
+		<div>
+			<img src="20190628/img/799/799_06.jpg" width="100%" alt="" title="" />
+		</div>
+		<div>
+			<img src="20190628/img/799/799_07.jpg" width="100%" alt="" title="" />
+		</div>
+
+	</div>
+	<script src="js/footer.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function () {
+		$(".New-housebanner .Yingmai-Tabqiehuan ul li").on("mouseenter", function () {
+			var ulindex = $(this).index();
+			$(".New-housebanner .contnt>div").eq(ulindex).show().siblings().hide();
+			$(this).addClass("changyingmai2").siblings().removeClass();
+			var s = $(this).find(".Yingmai-triangle").show().parent().siblings().find("span").hide()
+			console.log(s)
+		});
+		// 第二个选项卡
+		$(".New-housTabqie ul li").on("mouseenter", function () {
+			var ulindex2 = $(this).index();
+			$(".New-houscontent>div").eq(ulindex2).show().siblings().hide();
+		});
+	})
+</script>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>热装小区详情</title>
+    <link rel="stylesheet" href="css/jzindex.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <!--头部开始-->
+    <script src="js/header.js"></script>
+    <!--头部结束-->
+
+    <div class="phpar">
+        <div class="phpar-center">
+            <div class="phpar-left">
+                <img src="image/hot_detail/hot_d_03.jpg" alt="">
+                <ul class="phpar-list">
+                    <li class="phpar-list-a1 phpar-list-active">小区首页</li>
+                    <li class="phpar-list-a2">楼盘详情</li>
+                    <li class="phpar-list-a3">户型图</li>
+                    <li class="phpar-list-a4">设计案例</li>
+                    <li class="phpar-list-a5">在施工地</li>
+                </ul>
+                <img src="image/hot_detail/hot_d_04.jpg" alt="">
+            </div>
+            <div class="phpar-right">
+                <img src="image/hot_detail/hot_d_05.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <!--尾部开始-->
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
+
+<script>
+    $('.phpar-list>li').on('click', function () {
+        var index = $(this).index();
+    })
+    $('.phpar-list-a1').on('click', function () {
+        $('html,body').animate({ scrollTop: '0' }, 200)
+    })
+    $('.phpar-list-a2').on('click', function () {
+        $('html,body').animate({ scrollTop: '400px' }, 200)
+    })
+    $('.phpar-list-a3').on('click', function () {
+        $('html,body').animate({ scrollTop: '700px' }, 200)
+    })
+    $('.phpar-list-a4').on('click', function () {
+        $('html,body').animate({ scrollTop: '1100px' }, 200)
+    })
+    $('.phpar-list-a5').on('click', function () {
+        $('html,body').animate({ scrollTop: '1400px' }, 200)
+    })
+
+</script>

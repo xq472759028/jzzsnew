@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一线选材</title>
+    <link rel="stylesheet" href="css/jzindex.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <!--头部开始-->
+    <script src="js/header.js"></script>
+    <!--头部结束-->
+    <div class="home" style="width: 100%"><img src="image/ray/ray_03.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/ray/ray_05.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/ray/ray_06.jpg" alt=""></div>
+    <div class="pray" style="width: 100%">
+        <img src="image/ray/ray_07.jpg" alt="">
+        <div class="pray-high">
+            <ul class="pray-high-left">
+                <li class=" ctive" style="background:#17804b ">
+                    <p class="pray-high-active">
+                        <em class="pray-high-active">水</em>
+                        伟星PPR水管
+                    </p>
+                    <span class="pray-high-active">新型水管材料，可作为冷热水管，
+                        承诺50年使用期。</span>
+                    <div class="pray-high-triangle pray-high-active">
+                        <img src="image/ray/sanjiao-right.png" alt="">
+                    </div>
+                </li>
+                <li class="">
+                    <p>
+                        <em>电</em>
+                        华翌PVC管
+                    </p>
+                    <span>良好的耐酸性与耐腐蚀性</span>
+                    <div class="pray-high-triangle">
+                        <img src="image/ray/sanjiao-right.png" alt="">
+                    </div>
+                </li>
+                <li class="">
+                    <p>
+                        <em>木</em>
+                        福云大芯板
+                    </p>
+                    <span>由优质天然的木板方经热处理以后，层层
+                        加工后再经冷、热压机胶压后制成</span>
+                    <div class="pray-high-triangle">
+                        <img src="image/ray/sanjiao-right.png" alt="">
+                    </div>
+                </li>
+                <li class="">
+                    <p>
+                        <em>卫</em>
+                        道康宁粘接剂
+                    </p>
+                    <span>快渗透超速干，具有超强的耐候粘
+                        接力</span>
+                    <div class="pray-high-triangle">
+                        <img src="image/ray/sanjiao-right.png" alt="">
+                    </div>
+                </li>
+            </ul>
+            <div class="pray-high-center">
+                <ul class="pray-high-one">
+                    <li class="pray-high-active"><img src="image/ray/c1.jpg" alt=""></li>
+                    <li><img src="image/ray/ray11_03.jpg" alt=""></li>
+                    <li><img src="image/ray/c1.jpg" alt=""></li>
+                    <li><img src="image/ray/ray11_03.jpg" alt=""></li>
+
+                </ul>
+                <ul class="pray-high-two">
+                    <li><img src="image/ray/c1.jpg" alt=""></li>
+                    <li><img src="image/ray/ray11_03.jpg" alt=""></li>
+                    <li><img src="image/ray/c1.jpg" alt=""></li>
+                    <li><img src="image/ray/ray11_03.jpg" alt=""></li>
+                </ul>
+            </div>
+            <ul class="pray-high-right">
+                <li class="">
+                    <p>
+                        <em>油</em>
+                        德国都芳漆
+                    </p>
+                    <span>安全无毒无味，保色性与耐气候性
+                        超强，在室内，涂层也不易“出汗”</span>
+                    <div class="pray-high-triangles">
+                        <img src="image/ray/sanjiao-left.png" alt="">
+                    </div>
+                </li>
+                <li class="">
+                    <p>
+                        <em>顶</em>
+                        华兴轻钢龙骨
+                    </p>
+                    <span>结构安全可靠，防火性能、抗冲击
+                        性能优良</span>
+                    <div class="pray-high-triangles">
+                        <img src="image/ray/sanjiao-left.png" alt="">
+                    </div>
+                </li>
+                <li class="">
+                    <p>
+                        <em>墙</em>
+                        今朝专用墙衬
+                    </p>
+                    <span>粘结强度高，受潮后不会出现粉化
+                        现象，具有较强的耐水性</span>
+                    <div class="pray-high-triangles">
+                        <img src="image/ray/sanjiao-left.png" alt="">
+                    </div>
+                </li>
+                <li class="">
+                    <p>
+                        <em>瓦</em>
+                        东方雨虹防水材料
+                    </p>
+                    <span>鸟巢专供防水，即使墙面开裂也滴
+                        水不漏</span>
+                    <div class="pray-high-triangles">
+                        <img src="image/ray/sanjiao-left.png" alt="">
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="home" style="width: 100%"><img src="image/ray/ray_08.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/ray/ray_09.jpg" alt=""></div>
+    <div class="home" style="width: 100%"><img src="image/ray/ray_10.jpg" alt=""></div>
+    <!--尾部开始-->
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
+<script>
+    $(document).ready(function () {
+        $('.pray-high-left>li').on('click', function () {
+            var index = $(this).index();
+            $(this).siblings().css('background', '#fff');
+            $(this).css('background', '#17804b');
+            $('.pray-high-one>li').siblings().removeClass('pray-high-active')
+            $(this).parent().find('.pray-high-triangle').removeClass('pray-high-active')
+            $(this).parent().find('p').removeClass('pray-high-active')
+            $(this).parent().find('em').removeClass('pray-high-active')
+            $(this).parent().find('span').removeClass('pray-high-active')
+            $('.pray-high-one>li').eq(index).addClass('pray-high-active')
+            $(this).find('.pray-high-triangle').addClass('pray-high-active')
+            $(this).find('p').addClass('pray-high-active')
+            $(this).find('span').addClass('pray-high-active')
+            $(this).find('em').addClass('pray-high-active')
+            $('.pray-high-right>li').css('background', '#fff')
+            $('.pray-high-two').css('display', 'none');
+            $('.pray-high-one').css('display', 'block')
+            $('.pray-high-right>li').find('.pray-high-triangles').removeClass('pray-high-active')
+            $('.pray-high-right>li').find('p').removeClass('pray-high-active')
+            $('.pray-high-right>li').find('em').removeClass('pray-high-active')
+            $('.pray-high-right>li').find('span').removeClass('pray-high-active')
+        })
+        $('.pray-high-right>li').on('click', function () {
+            var index = $(this).index();
+            $(this).siblings().css('background', '#fff');
+            $(this).css('background', '#17804b');
+            $(this).siblings().find('.pray-high-triangles').removeClass('pray-high-active')
+            $(this).siblings().find('p').removeClass('pray-high-active')
+            $(this).siblings().find('em').removeClass('pray-high-active')
+            $(this).siblings().find('span').removeClass('pray-high-active')
+            $('.pray-high-two>li').siblings().removeClass('pray-high-active')
+            $('.pray-high-two>li').eq(index).addClass('pray-high-active')
+            $(this).find('.pray-high-triangles').addClass('pray-high-active')
+            $(this).find('p').addClass('pray-high-active')
+            $(this).find('span').addClass('pray-high-active')
+            $(this).find('em').addClass('pray-high-active')
+            $('.pray-high-left>li').css('background', '#fff')
+            $('.pray-high-one').css('display', 'none')
+            $('.pray-high-two').css('display', 'block')
+            $('.pray-high-left>li').find('.pray-high-triangle').removeClass('pray-high-active')
+            $('.pray-high-left>li').find('p').removeClass('pray-high-active')
+            $('.pray-high-left>li').find('em').removeClass('pray-high-active')
+            $('.pray-high-left>li').find('span').removeClass('pray-high-active')
+        })
+    })
+</script>

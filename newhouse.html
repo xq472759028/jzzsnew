@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>老房巧适装</title>
+	<link rel="stylesheet" href="css/jzindex.css">
+	<link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+	<script src="js/header.js"></script>
+	<div id="New-house">
+		<div>
+			<img src="20190628/img/newhouse/laofang_01.jpg" width="100%" alt="" title="" />
+		</div>
+		<div class="New-housebanner">
+			<div class="Yingmai-Tabqiehuan">
+				<ul>
+					<li class="changyingmai36">客厅
+						<span class="Yingmai-triangle disblayyingm" style="display: block;"></span>
+					</li>
+					<li>餐厅
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>主卧
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>次卧
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>厨房
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>卫生间
+						<span class="Yingmai-triangle"></span>
+					</li>
+					<li>阳台
+						<span class="Yingmai-triangle"></span>
+					</li>
+				</ul>
+
+			</div>
+			<div class="contnt">
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_09.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_09.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_09.jpg" width="100%" alt="" title="" />
+				</div>
+				<div>
+					<img src="20190628/img/newhouse/111_03.jpg" width="100%" alt="" title="" />
+				</div>
+			</div>
+		</div>
+		<div>
+			<img src="20190628/img/newhouse/laofang_03.jpg" width="100%" alt="" title="" />
+		</div>
+		<div class="New-housback">
+			<div class="New-housTabqie">
+				<!-- 头像 -->
+				<div class="Head-portrait">
+					<img src="20190628/img/newhouse/oldhousesjs.png" />
+				</div>
+				<div class="title-old">
+					<span>王海静</span>
+					<span>主任设计师</span>
+					<p>代表作品：汇景湾、黄山酒店、悦都会华贸城、圣晖花园</p>
+				</div>
+				<ul>
+					<li>
+						<a href="" class="new_hover">厨房</a>
+					</li>
+					<li>
+						<a href="">客餐厅</a>
+					</li>
+					<li>
+						<a href="">阳台</a>
+					</li>
+					<li>
+						<a href="">卫生间</a>
+					</li>
+					<li>
+						<a href="">卧室</a>
+					</li>
+				</ul>
+				<div class="New-houscontent">
+					<div>
+						<img src="20190628/img/newhous/oldbanner3_03.jpg" width="100%" />
+					</div>
+					<div>
+						<img src="20190628/img/newhous/oldbanner31_03.jpg" width="100%" />
+					</div>
+					<div>
+						<img src="20190628/img/newhous/oldbanner3_03.jpg" width="100%" />
+					</div>
+					<div>
+						<img src="20190628/img/newhous/oldbanner31_03.jpg" width="100%" />
+					</div>
+					<div>
+						<img src="20190628/img/newhous/oldbanner3_03.jpg" width="100%" />
+					</div>
+				</div>
+				<div class="live-newhouse"></div>
+			</div>
+		</div>
+		<div>
+			<img src="20190628/img/newhouse/laofang_05.jpg" width="100%" alt="" title="" />
+		</div>
+	</div>
+	<script src="js/footer.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+	$(document).ready(function () {
+		$(".New-housebanner .Yingmai-Tabqiehuan ul li").on("mouseenter", function () {
+			var ulindex = $(this).index();
+			$(".New-housebanner .contnt>div").eq(ulindex).show().siblings().hide();
+			$(this).addClass("changyingmai36").siblings().removeClass();
+			var s = $(this).find(".Yingmai-triangle").show().parent().siblings().find("span").hide()
+		});
+		// 第二个选项卡
+		$(".New-housTabqie ul li").on("mouseenter", function () {
+			var ulindex2 = $(this).index();
+			$(".New-houscontent>div").eq(ulindex2).show().siblings().hide();
+			$(this).find("a").addClass("new_hover").parent().siblings().find("a").removeClass();
+		});
+	})
+</script>
+
+</html>

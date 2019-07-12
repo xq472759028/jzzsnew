@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/jzindex.css">
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <script src="js/header.js"></script>
+    <div class="home"><img src="image/build_detail/build_t (2).jpg" alt=""></div>
+    <div class="home home-tan"><img src="image/build_detail/build_t (1).jpg" alt=""></div>
+    <div class="home-all">
+        <div class="home-shadow">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="image/build_detail/4_03.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/build_detail/4_03.jpg" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="image/build_detail/4_03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="home-shadow-close">×</div>
+        </div>
+    </div>
+    <script src="js/footer.js"></script>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+
+        $('.home-tan').on('click', function () {
+            $('.home-all').css('left', '0');
+
+        })
+        $('.home-shadow-close').on('click', function () {
+            $('.home-all').css('left', '-100%');
+
+        })
+        var swiper1 = new Swiper('.home-shadow .swiper-container', {
+            autoHeight: true,
+            delay: 2000,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            spaceBetween: 50,
+            speed: 1500,
+            loop: true,
+            autoplay: true,
+            pagination: {
+                el: '.home-shadow .swiper-pagination',
+                clickable: true
+            }
+        });
+    })
+</script>

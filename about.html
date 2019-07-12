@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>关于今朝</title>
+	
+	<link rel="stylesheet" href="20190628/css/iconfont.css" /> <!-- 小图标css -->
+	<link href="https://cdn.bootcss.com/Swiper/4.4.1/css/swiper.min.css" rel="stylesheet"> <!-- Swiper css -->
+	<link rel="stylesheet" href="css/public.css">
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/jzindex.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/public.js"></script>
+</head>
+
+<body>
+	<script src="js/header.js"></script>
+	<div id="About_Present">
+		<div class="About_title">
+			<span>首页 &gt 关于今朝</span>
+		</div>
+		<div class="setion">
+			<!-- 选项卡切换 -->
+			<ul class="About_Left">
+				<li class="Decoraabout"><i class="iconfont icon-gongsijianjie"></i> 今朝简介</li>
+				<li><i class="iconfont icon-chartline"></i> 今朝历程</li>
+				<li><i class="iconfont icon-rongyubiaozhang"></i> 今朝荣誉</li>
+				<li><i class="iconfont icon-pingjia"></i> 客户评价</li>
+				<li><i class="iconfont icon-wentidan"></i> 常见问题</li>
+				<li><i class="iconfont icon-wenhua"></i> 今朝文化</li>
+			</ul>
+			<div class="About_Right">
+				<div class="Decoraabout2">
+					<img src="20190628/img/about/qiehuan1.jpg" width="100%" />
+				</div>
+				<div>
+					<img src="20190628/img/about/qiehuan2.jpg" width="100%" />
+				</div>
+				<div>
+					<img src="20190628/img/about/qiehuan3.jpg" width="100%" />
+				</div>
+				<div>
+					<img src="20190628/img/about/qiehuan4.jpg" width="100%" />
+				</div>
+				<div>
+					<img src="20190628/img/about/qiehuan1.jpg" width="100%" />
+				</div>
+				<div>
+					<img src="20190628/img/about/qiehuan2.jpg" width="100%" />
+				</div>
+			</div>
+		</div>
+		<div style="width: 1200px; margin: 0 auto;">
+			<img src="20190628/img/about/abooutbott.jpg" width="100%" alt="" />
+		</div>
+	</div>
+	<script src="js/footer.js"></script>
+</body>
+<script src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/Swiper/4.4.1/js/swiper.min.js"></script>
+<script>
+	// 选项卡切换
+	$("#About_Present .About_Left li").on("click", function () {
+		var About_index = $(this).index();
+		$("#About_Present .About_Right>div").eq(About_index).show().siblings().hide();
+		$(this).addClass("Decoraabout").siblings().removeClass();
+	});
+</script>
+
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">   
+    <title>公共端</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/public.js"></script>
+</head>
+
+<body>
+    <!--头部开始-->
+    <!--头部城市切换、意见反馈、咨询热线-->
+    <div class="qzlead-top">
+        <div class="qzlead-top-center">
+            <div class="qzlead-area">
+                <i class="iconfont icon-zuobiao"></i>
+                <p>北京</p>
+                <span>[切换]</span>
+                <!--定位所有的城市开始-->
+                <div class="qzlead-town">
+                    <ul class="qzlead-town-title">
+                        <li class="qzlead-line">热门城市</li>
+                        <li>ABCD</li>
+                        <li>FGHJ</li>
+                        <li>KLMN</li>
+                        <li>MNOP</li>
+                        <li>QSTW</li>
+                        <li>XYZ</li>
+                    </ul>
+                    <div class="qzlead-town-list">
+                        <div class="qzlead-town-item">
+                            <ul class="qzlead-hot">
+                                <li><a href="javascript:;">北京市</a></li>
+                                <li><a href="javascript:;">上海市</a></li>
+                                <li><a href="javascript:;">广州市</a></li>
+                                <li><a href="javascript:;">深圳市</a></li>
+                                <li><a href="javascript:;">成都市</a></li>
+                                <li><a href="javascript:;">重庆市</a></li>
+                                <li><a href="javascript:;">武汉市</a></li>
+                                <li><a href="javascript:;">沈阳市</a></li>
+                                <li><a href="javascript:;">大连市</a></li>
+                                <li><a href="javascript:;">郑州市</a></li>
+                                <li><a href="javascript:;">西安市</a></li>
+                                <li><a href="javascript:;">南京市</a></li>
+                                <li><a href="javascript:;">苏州市</a></li>
+                                <li><a href="javascript:;">无锡市</a></li>
+                                <li><a href="javascript:;">徐州市</a></li>
+                                <li><a href="javascript:;">杭州市</a></li>
+                                <li><a href="javascript:;">宁波市</a></li>
+                                <li><a href="javascript:;">天津市</a></li>
+                                <li><a href="javascript:;">昆明市</a></li>
+                                <li><a href="javascript:;">南宁市</a></li>
+                                <li><a href="javascript:;">合肥市</a></li>
+                                <li><a href="javascript:;">长沙市</a></li>
+                                <li><a href="javascript:;">青岛市</a></li>
+                                <li><a href="javascript:;">哈尔滨市</a></li>
+                                <li><a href="javascript:;">兰州市</a></li>
+                                <li><a href="javascript:;">东莞市</a></li>
+                                <li><a href="javascript:;">惠州市</a></li>
+                                <li><a href="javascript:;">佛山市</a></li>
+                                <li><a href="javascript:;">贵阳市</a></li>
+                                <li><a href="javascript:;">泉州市</a></li>
+                            </ul>
+                        </div>
+                        <div class="qzlead-town-item" style="display: none">
+                            <ul class="qzlead-letter">
+                                <li>
+                                    <p class="qzlead-upper">A</p>
+                                    <p class="qzlead-urban">
+                                        <span>鞍山市</span>
+                                        <span>安庆市</span>
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--定位所有的城市结束-->
+            </div>
+            <div class="qzlead-top-right">
+                <a href="javascript:;" class="qzlead-idea">我要装修</a>
+                <a href="javascript:;" class="qzlead-idea qzlead-idea-hover">关注有礼
+                    
+                </a>
+                <p class="pppp">
+                    <i class="iconfont icon-dianhua"></i>
+                    <span>服务热线：400-678-8998</span>
+                </p>
+                <!--联系今朝弹出框-->
+                <div class="qzlead-contact">
+                    <p>联系今朝管家</p>
+                    <input type="text" placeholder="输入您的手机号，稍后将致电您">
+                    <button type="submit">立即免费通话</button>
+                    <span>今朝承诺：不会收取任何通话费用</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--logo、首页、搜索-->
+    <div class="qzlead-bottom">
+        <div class="qzlead-bottom-center">
+            <!--官网logo-->
+            <div class="qzlead-logo">
+                <img src="image/jzlogo.png" alt="">
+            </div>
+            <div class="qzlead-jzold">
+                <img src="image/jzold.jpg" alt="">
+            </div>
+            <!--搜索框-->
+            <div class="qzlead-search-next">
+                <i class="iconfont icon-ziyuan"></i>
+            </div>
+            <div class="qzlead-search">
+                <select name="" id="">
+                    <option value="">装修案例</option>
+                    <option value="">装修工地</option>
+                </select>
+                <input type="text" placeholder="搜装修公司/问题/攻略/效果图">
+                <div class="qzlead-search-last">
+                    <i class="iconfont icon-ziyuan"></i>
+                    <span>搜索</span>
+                </div>
+
+            </div>
+
+            <!--头部导航栏循环-->
+            <ul class="qzlead-list">
+                <li class="qzlead-list-li">
+                    <a href="home.html">
+                        <span class="qzlead-list-span">首页</span>
+                    </a>
+                </li>
+                <li class="qzlead-list-li">
+                    <a href="Product_List.html">
+                        <span class="qzlead-list-span">装修产品</span>
+                        <!-- <img src="" alt="" class="qzlead-list-hot"> -->
+                    </a>
+                    <!--产品样式-->
+                    <div class="qzlead-result">
+                        <ul class="qzlead-effect" style="width: 850px">
+                            <li>
+                                <a href="yingmai.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/yingmai1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/yingmai2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>英迈整装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="old_house.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/lfqs1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/lfqs2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>老房巧适装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="799.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/xfqs1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/xfqs2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>新房巧适装</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="newhouse.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/lftc1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/lftc2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>老房套餐</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="new_house.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/xftc1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/xftc2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>新房套餐</p>
+                                </a>
+
+                            </li>
+                            <li>
+                                <a href="local.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/xiaohuxing1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/xiaohuxing2.png" alt="" class="qzlead-effect-off">
+
+                                    </div>
+                                    <p>小户型装修</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="local.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/jubu1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/jubu2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>局部装修</p>
+                                </a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="qzlead-list-li">
+                    <a href="case.html">
+                        <span class="qzlead-list-span">装修案例</span>
+                    </a>
+                    <!--装修案例样式-->
+                    <div class="qzlead-result">
+                        <ul class="qzlead-effect" style="width: 350px">
+                            <li>
+                                <a href="real-case.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/anli1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/anli2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>实景案例</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="build.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/gongdi1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/gongdi2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>在施工地</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="hot.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/xiaoqu1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/xiaoqu2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>热装小区</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="qzlead-list-li">
+                    <a href="offer.html">
+                        <span class="qzlead-list-span">设计报价</span>
+                    </a>
+                    <!-- 设计报价下拉 -->
+                    <div class="qzlead-result">
+                        <ul class="qzlead-effect" style="width: 370px">
+                            <li>
+                                <a href="appoint.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/yuyue1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/yuyue2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>预约设计师</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="real-case-detail.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/zhuangfang1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/zhuanfang2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>设计师专访</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="quote.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/baojia1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/baojia1.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>装修报价</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="qzlead-list-li">
+                    <a href="ensure.html">
+                        <span class="qzlead-list-span">装修保障</span>
+                    </a>
+                    <!--装修保障下拉-->
+                    <div class="qzlead-result">
+                        <ul class="qzlead-effect" style="width: 1000px">
+                            <li>
+                                <a href="level.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/dingji1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/dingji2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>顶级设计</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="pip.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/yixian1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/yixian2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>一级选材</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="ray.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/biaozhun1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/biaozhuan2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>标准施工</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="sign.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/biaogan1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/biaogan2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>标杆工程</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="tance.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/yanke1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/yanke2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>严苛验收</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="old_museum.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/lfbw1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/lfbw2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>老房博物馆</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="shequfuwu.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/shequ1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/shequ2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>老房社区店</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Check_Beforea.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/3xian1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/3xian2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>3.0线下体验馆</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </li>
+                <li class="qzlead-list-li">
+                    <a href="Decora_strat.html">
+                        <span class="qzlead-list-span">装修攻略</span>
+                    </a>
+                    <!--装修攻略下拉-->
+                    <div class="qzlead-result">
+                        <ul class="qzlead-effect" style="width: 560px">
+                            <li>
+                                <a href="Decora_strat.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/qian1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/qian2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>装修前</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Decora_strat.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/zhong1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/zhong2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>装修中</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Decora_strat.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/hou1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/hou2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>装修后</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Decora_strat.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/redian1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/redian2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>装修热点</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Decora_strat.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/redian1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/redian2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>装修新闻</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="qzlead-list-li">
+                    <a href="about.html">
+                        <span class="qzlead-list-span">关于今朝</span>
+                    </a>
+                    <!--关于今朝下拉-->
+                    <div class="qzlead-result">
+                        <ul class="qzlead-effect" style="width: 570px">
+                            <li>
+                                <a href="about.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/guanyu1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/guanyu2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>关于今朝</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/rongyao1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/rongyao2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>今朝荣耀</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/pingjia1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/pingjia2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>客户评价</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/wenhua1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/wenhua2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>常见问题</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html">
+                                    <div class="qzlead-effect-img">
+                                        <img src="image/public/wenhua1.png" alt="" class="qzlead-effect-on">
+                                        <img src="image/public/wenhua2.png" alt="" class="qzlead-effect-off">
+                                    </div>
+                                    <p>今朝文化</p>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--头部结束-->
+
+    <!--尾部开始-->
+    <div class="qzfoot">
+        <div class="qzfoot-center">
+            <ul class="qzfoot-list">
+                <li>
+                    <a href="javascript:;">关于我们</a>
+                    <ul class="qzfoot-list-con">
+                        <li><a href="">新闻中心</a></li>
+                        <li><a href="">客户见证</a></li>
+                        <li><a href="">装修知识</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">服务与支持</a>
+                    <ul class="qzfoot-list-con">
+                        <li><a href="">免费报价</a></li>
+                        <li><a href="">免费验房</a></li>
+                        <li><a href="">免费量房</a></li>
+                        <li><a href="">业主评价</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">媒体报道</a>
+                    <ul class="qzfoot-list-con">
+                        <li><a href="">老房装修</a></li>
+                        <li><a href="">局部装修</a></li>
+                        <li><a href="">新房装修</a></li>
+                        <li><a href="">定制家具</a></li>
+                        <li><a href="">小户型装修</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="qzfoot-info">
+                <p>
+                    <span>售前咨询：400-678-8998</span>
+                    <span>主材配送：010-67641158-859</span>
+                </p>
+                <p>
+                    <span>售后维修：010-67641587</span>
+                    <span>投诉建议：010-67641158-821</span>
+                </p>
+            </div>
+            <div class="qzfoot-wechart">
+                <p>
+                    <img src="image/wechart.jpg" alt="">
+                    <span>官方公众号</span>
+                </p>
+                <p>
+                    <img src="image/weibo.jpg" alt="">
+                    <span>官方微博</span>
+                </p>
+            </div>
+        </div>
+        <p class="qzfoot-word">
+            <img src="image/addres.png" alt="">
+            <span>北京丰台区东铁营顺一条8号</span>
+            <img src="image/blog.png" alt="" style="margin-top: 4px">
+            <span>service@jzzs.com.cn</span>
+            <span>京ICP备05028416号-1</span>
+        </p>
+        <p class="qzfoot-word">
+            免责声明：本网站部分内容由用户自行上传 ，如单位或个人发现本网站存在信息版权或有侵权嫌疑等问题的，请及时与本站联系，网站会在第一时间予以更改或删除
+        </p>
+    </div>
+</body>
+
+</html>
+<!-- <script>
+    //        热门城市
+    $('.qzlead-area').hover(function () {
+        $(this).addClass('qzlead-area-active');
+        $(".qzlead-town").show();
+        $(".qzlead-town").hover(function () {
+            $(this).show();
+        })
+    }, function () {
+        $(this).removeClass('qzlead-area-active');
+        $(".qzlead-town").hide()
+    });
+    //    联系方式效果
+    $('.qzlead-idea-hover').hover(function () {
+        $(".qzlead-contact").slideDown();
+        $(".qzlead-contact").hover(function () {
+            $(this).show();
+        }, function () {
+            $(this).slideUp();
+        })
+    }, function () {
+        $(".qzlead-contact").hide()
+    });
+    // 头部效果开始
+    $(".qzlead-list-li").mouseenter(function () {
+        if ($(this).find('.qzlead-result')) {
+            $(this).find('.qzlead-result').show();
+           $(this).find('.qzlead-list-span').css('color','#084f2b')
+           $(this).css('border-bottom','1px solid #084f2b')
+            $('.qzlead-result').hover(function () {
+                $(this).show();
+            })
+            $('.qzlead-effect>li').mouseenter(function () {
+                $(this).find('.qzlead-effect-on').css('display','none');
+                $(this).find('.qzlead-effect-off').css('display','block');
+                $(this).find('p').css("color", "#084f2b");
+            }).mouseleave(function(){
+                $(this).find('.qzlead-effect-on').css('display','block');
+                $(this).find('.qzlead-effect-off').css('display','none');
+                $(this).find('p').css("color", "#333");
+            })
+        } else {
+            $(this).find('.qzlead-result').hide();
+            $(this).find('.qzlead-list-span').css("color", "#333");
+        }
+    });
+    $(".qzlead-list-li").mouseleave(function () {
+        $(this).find('.qzlead-result').hide();
+        $(this).find('.qzlead-list-span').css("color", "#333");
+
+           $(this).css('border-bottom','none')
+    });
+
+
+
+    $(".qzlead-list-li>a").each(function () {
+        $this = $(this);
+        if ($this[0].href == String(window.location)) {
+            $(this).find('.qzlead-list-span').css('color','#084f2b')
+            $this.parent().siblings().find('.qzlead-list-span').css('color','#333')
+
+        }
+    });
+    $('.qzlead-effect>li>a').each(function () {
+        $this = $(this);
+        if ($this[0].href == String(window.location)) {
+            $this.parent().parent().parent().parent().find('.qzlead-list-span').css('color','#084f2b')
+            $this.parent().parent().parent().parent().parent().siblings().find('.qzlead-list-span').css('color','#084f2b');
+
+        }
+    })
+
+    // $(".qzlead-list-li").on("click", function () {
+    //     $(this).children().first().find('span').addClass('qzlead-list-a');
+    //     $(this).children().first().find('.icon-img-top').css("opacity", 0);
+    //     $(this).siblings().find('span').removeClass('qzlead-list-a');
+    //     $(this).siblings().find('.icon-img').css("opacity", 1);
+    // });
+    // $(".qzlead-list-li").find('.qzlead-effect').children().on("click", function () {
+    //     $(this).children().first().find('.icon-first').removeClass('icon-sanjiaoxing');
+    //     $(this).siblings().find('.icon-first').addClass('icon-sanjiaoxing');
+    // });
+    //头部效果结束
+
+    // 搜索框点击事件
+    $('.qzlead-search-next').on('click', function () {
+
+        $('.qzlead-list').css('display', 'none');
+        $('.qzlead-search').css('display', 'block')
+        $('.qzlead-search-next').css('display', 'none')
+    })
+    $(document).mouseup(function (e) {
+        var _con = $('.qzlead-search');
+        if (!_con.is(e.target) && _con.has(e.target).length === 0) {
+            $('.qzlead-list').css('display', 'block');
+            $('.qzlead-search').css('display', 'none')
+            $('.qzlead-search-next').css('display', 'block')
+        }
+    });
+</script> -->
